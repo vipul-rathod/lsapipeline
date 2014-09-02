@@ -484,7 +484,7 @@ Camera2 {
 }
 Read {
  inputs 0
- file I:/bubblebathbay/nuke/starField.tga
+ file I:/lsapipeline/nuke/starField.tga
  format "4096 2048 0 0 4096 2048 1 "
  origset true
  name Read1
@@ -1592,7 +1592,7 @@ SoftClip {
  ypos 2097
 }
 Write {
- file I:/bubblebathbay/_renders/TOD_Night8a.png
+ file I:/lsapipeline/_renders/TOD_Night8a.png
  colorspace sRGB
  file_type png
  checkHashOnRead false

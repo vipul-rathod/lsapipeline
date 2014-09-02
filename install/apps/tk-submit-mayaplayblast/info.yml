@@ -1,0 +1,113 @@
+#
+# Copyright (c) 2012 Shotgun Software, Inc
+# ----------------------------------------------------
+#
+# Metadata defining the behaviour and requirements for this app
+
+# expected fields in the configuration file for this app
+configuration:
+    movie_workpath_template:
+        type: template
+        required_fields: []
+        optional_fields: "*"
+        description: Template defining the output location of the work in progress movie file on the the file system. 
+
+    installPath:
+        type: str
+        default_value: ''
+        description: Used to set a path for the codecs if an operators machine is missing the codec and needs to install it themselves.
+                            For windows paths use \\ eg C:\\temp\\
+
+    cameraSuffix:
+        type: str
+        default_value: _shotCam
+        description: Is this the suffix for the app to find the shot camera in a shot. Note this will need to be set for asset to though it's not used.
+    
+    isAsset:
+        type: bool
+        default_value: false
+        description: Is this an asset playblast for review? Or is it s a shot playblast for review?
+
+    upload_to_shotgun:
+        type: bool
+        default_value: true
+        description: Should the movie being created be uploaded to Shotgun
+                     as a version or just kept on disk? Disabling this as well
+                     as the store_on_disk option effectively disables the whole
+                     tool.
+
+    store_on_disk:
+        type: bool
+        default_value: true
+        description: Should the movie being created be kept on disk? Disabling
+                     this as well as the upload_to_shotgun option will
+                     effectively disable the whole tool.
+
+    movie_path_template:
+        type: template
+        required_fields: []
+        optional_fields: "*"
+        description: Template defining the output location of the movie file on the the file system. 
+                    For this template you can use all the fields defined in the template passed to the
+                    render_and_submit fields. In addition to these you can use the special fields width and height, which contain the resolution of the movie. 
+                    If the store_on_disk setting is false, this setting will still be required but will be used as a temporary location for processing before the file is uploaded to Shotgun.
+
+    movie_width:
+        type: int
+        default_value: 1280
+        description: The width of the rendered movie file
+
+    movie_height:
+        type: int
+        default_value: 720
+        description: The height of the rendered movie file
+
+    new_version_status:
+        type: str
+        default_value: rev
+        description: The value to use for a new Version's status.
+
+    version_number_padding:
+        type: int
+        default_value: 3
+        description: This value will be used to pad the version number in the
+                     slate and various movie burnins. This will not affect version
+                     number padding in the movie filename. See movie_path_template.
+                     Use 1 for no padding.
+                     
+    sg_in_frame_field:
+        type: str
+        default_value: "sg_cut_in"
+        description: The Shotgun field to use to retrieve the in frame. The app will look 
+                     for this field on the entity associated with the current context (e.g.
+                     the current shot, current asset etc).
+        
+    sg_out_frame_field:
+        type: str
+        default_value: "sg_cut_out"
+        description: The Shotgun field to use to retrieve the out frame. The app will look 
+                     for this field on the entity associated with the current context (e.g.
+                     the current shot, current asset etc).
+
+    display_name:
+        type: str
+        default_value: Playblast Shot...
+        description: Published a playblast to the version for an asset for review
+                
+# the Shotgun fields that this app needs in order to operate correctly
+requires_shotgun_fields:
+
+# More verbose description of this item 
+display_name: "PlayBlast"
+description: "Shot based tools for BBB"
+
+# Required minimum versions for this item to run
+requires_shotgun_version:
+requires_core_version: "v0.14.0"
+requires_engine_version: 
+
+# For now this app is only compatible with Nuke.
+supported_engines: ["tk-maya"]
+
+# the frameworks required to run this app
+frameworks:

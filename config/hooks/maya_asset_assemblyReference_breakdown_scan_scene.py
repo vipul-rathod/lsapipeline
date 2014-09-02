@@ -25,8 +25,8 @@ import maya.cmds as cmds
 import pymel.core as pm
 import os, sys
 ## Now get the custom tools
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 import utils as utils
 
 class ScanScene(Hook):

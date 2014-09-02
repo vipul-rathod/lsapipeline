@@ -1,0 +1,58 @@
+#
+# Copyright (c) 2012 Shotgun Software, Inc
+# ----------------------------------------------------
+#
+# Metadata defining the behaviour and requirements for this app
+
+# expected fields in the configuration file for this app
+configuration:
+
+    shot_root_template:
+        type: str
+        default_value: shot_root
+        description: Fetches the shot_root template to get the name from
+
+    movie_width:
+        type: int
+        default_value: 1280
+        description: The width of the rendered movie file in renderglobals
+
+    movie_height:
+        type: int
+        default_value: 720
+        description: The height of the rendered movie file in renderglobals
+        
+    renderEngine:
+        type: str
+        default_value: mentalRay
+        description: Used to set renderglobals renderer
+        
+    fps:
+        type: int
+        default_value: 25
+        description: Frames per second, default PAL 25fps, valid options are 24, 25, 30
+    
+    display_name:
+        type: str
+        default_value: createShotCam
+        description: Fetches the latest layout camera for the current shot
+    
+                
+# the Shotgun fields that this app needs in order to operate correctly
+requires_shotgun_fields:
+
+# More verbose description of this item 
+display_name: "1. MultiLoader2.0--"
+description: ""
+
+
+# Required minimum versions for this item to run
+requires_shotgun_version:
+requires_core_version: "v0.14.0"
+requires_engine_version: 
+
+# For now this app is only compatible with Nuke.
+supported_engines: ["tk-maya"]
+
+# the frameworks required to run this app
+frameworks:

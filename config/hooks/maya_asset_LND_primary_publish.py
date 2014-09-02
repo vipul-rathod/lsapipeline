@@ -13,8 +13,8 @@ import uuid
 import tempfile
 
 import os, getpass, sys
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 
 import core_archive_writeXML as writeXML
 

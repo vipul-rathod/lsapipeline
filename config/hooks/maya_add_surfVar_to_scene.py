@@ -23,8 +23,8 @@ import xml.etree.ElementTree as xml
 import maya.cmds as cmds
 import maya.mel as mel
 ## Now get the custom tools
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 import maya_asset_MASTERCLEANUPCODE as cleanup
 from debug import debug
 import shader_lib as shd
@@ -93,7 +93,7 @@ class AddFileToScene(tank.Hook):
                 'local_storage': {'type': 'LocalStorage', 'id': 1, 'name': 'primary'}, 
                 'local_path': 'I:\\bubblebathbay\\assets\\Building\\jbd_dummybld_BLD\\SRFVar_01\\publish\\xml\\jbddummybldBLD.v007.xml', 
                 'content_type': None, 
-                'local_path_mac': '/Volumes/bubblebathbay3D/bubblebathbay/assets/Building/jbd_dummybld_BLD/SRFVar_01/publish/xml/jbddummybldBLD.v007.xml', 
+                'local_path_mac': '/Volumes/bubblebathbay3D/lsapipeline/assets/Building/jbd_dummybld_BLD/SRFVar_01/publish/xml/jbddummybldBLD.v007.xml', 
                 'type': 'Attachment', 'id': 6202, 'link_type': 'local'}, 
                 'type': 'PublishedFile', 
                 'id': 4752, 

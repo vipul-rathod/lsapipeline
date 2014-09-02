@@ -23,8 +23,8 @@ import xml.etree.ElementTree as xml
 import maya.cmds as cmds
 import maya.mel as mel
 ## Now get the custom tools
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 import maya_asset_MASTERCLEANUPCODE as cleanup
 from debug import debug
 import shader_lib as shd

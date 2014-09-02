@@ -1,0 +1,35 @@
+#
+# Copyright (c) 2012 Shotgun Software, Inc
+# ----------------------------------------------------
+#
+# Metadata defining the behaviour and requirements for this app
+
+# expected fields in the configuration file for this app
+configuration:
+    display_name:
+        type: str
+        default_value: Loader
+        description: Fetches the latest uv xml
+       
+    maya_asset_uv_template:
+        type: str
+        default_value: maya_asset_uvxml
+        description: Fetches the template
+    
+# the Shotgun fields that this app needs in order to operate correctly
+requires_shotgun_fields:
+
+# More verbose description of this item 
+display_name: "1. MultiLoader2.0--"
+description: "Lighting based tools for BBB"
+
+# Required minimum versions for this item to run
+requires_shotgun_version:
+requires_core_version: "v0.14.0"
+requires_engine_version: 
+
+# For now this app is only compatible with Nuke.
+supported_engines: ["tk-maya"]
+
+# the frameworks required to run this app
+frameworks:

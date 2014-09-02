@@ -18,8 +18,8 @@ different. See code comments for details.
 """
 import os, sys, tank
 ## Now get the custom tools
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 import utils as utils
 from tank import TankError
 

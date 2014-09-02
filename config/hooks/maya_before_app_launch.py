@@ -16,8 +16,8 @@ to set environment variables or run scripts as part of the app initialization.
 """
 
 import os, sys, shutil, tank, getpass
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 import utils as utils
 from datetime import datetime
 
@@ -56,7 +56,7 @@ class BeforeAppLaunch(tank.Hook):
         
         ## Check to see if the user name and path exists, if it doesn't make a new folder and copy the userSetup.py into the right folder
         ## Default configs
-        rootDir                 = 'T:/software/bubblebathbay/defaultMayaEnv'
+        rootDir                 = 'T:/software/lsapipeline/defaultMayaEnv'
         DefaultUserSetupPyPath  = "%s/userSetup.py" % rootDir
         DefaultBBBShelfPath     =  "%s/shelf_bbb.mel" % rootDir
         
@@ -101,7 +101,7 @@ class BeforeAppLaunch(tank.Hook):
                                'T:/software/bbbay/%s' % os.pathsep, 
                                'T:/software/bbbay/BBmaya/tools_freeMelScripts/2013%s' % os.pathsep,
                                'T:/software/bbbay/BBmaya/tools_freeMelScripts/;',
-                               'T:/software/bubblebathbay/defaultMayaEnv/MayaBonusTools2013.5/scripts%s' % os.pathsep
+                               'T:/software/lsapipeline/defaultMayaEnv/MayaBonusTools2013.5/scripts%s' % os.pathsep
                                ]
         finalScriptPath = ''
         if os.getenv("MAYA_SCRIPT_PATH"):
@@ -121,10 +121,10 @@ class BeforeAppLaunch(tank.Hook):
         ## PYTHON PATH APPEARS TO BE IGNORED BY MAYA
         print 'Setting PYTHONPATH NOW...'
         pythonPaths = ['T:/software/python27;', 
-                                        'T:/software/bubblebathbay/defaultMayaEnv/site-packages;',
+                                        'T:/software/lsapipeline/defaultMayaEnv/site-packages;',
                                         'T:/software/bbbay/BBmaya/tools_freeMelScripts;', 
                                         "T:/software/bbbay/;", 
-                                        'T:/software/bubblebathbay/defaultMayaEnv/MayaBonusTools2013/python;'
+                                        'T:/software/lsapipeline/defaultMayaEnv/MayaBonusTools2013/python;'
                                         ]
         finalPythonPath = ';'
         for eachPath in pythonPaths:
@@ -137,10 +137,10 @@ class BeforeAppLaunch(tank.Hook):
         ###  TRYING SYS PATH FOR LOCAL DEV CONFIGS
         print 'Setting sys.path NOW...'
         sysPaths = ['T:/software/python27;', 
-                    'T:/software/bubblebathbay/defaultMayaEnv/site-packages;',
+                    'T:/software/lsapipeline/defaultMayaEnv/site-packages;',
                     'T:/software/bbbay/BBmaya/tools_freeMelScripts;', 
                     "T:/software/bbbay/;", 
-                    'T:/software/bubblebathbay/defaultMayaEnv/MayaBonusTools2013/python;',
+                    'T:/software/lsapipeline/defaultMayaEnv/MayaBonusTools2013/python;',
                     'C:\Program Files\Thinkbox\Deadline\bin;'
                     ]
         

@@ -1,0 +1,46 @@
+#
+# Copyright (c) 2012 Shotgun Software, Inc
+# ----------------------------------------------------
+#
+# Metadata defining the behaviour and requirements for this app
+
+# expected fields in the configuration file for this app
+configuration:
+    sunDirectionTemplate:
+        type: str
+        default_value: maya_sunDirection
+        description: Fetches the asset template you want to use for sun direction
+
+    mia_physicalskyTemplate:
+        type: str
+        default_value: maya_mia_physicalsky
+        description: Fetches the asset template you want to use for sun direction
+
+    mia_physicalsunTemplate:
+        type: str
+        default_value: maya_mia_physicalsun
+        description: Fetches the asset template you want to use for sun direction
+
+    display_name:
+        type: str
+        default_value: Fetch All Shot Assets
+        description: Fetches the latest layout camera for the current shot
+                
+# the Shotgun fields that this app needs in order to operate correctly
+requires_shotgun_fields:
+
+# More verbose description of this item 
+display_name: "1. MultiLoader2.0--"
+description: "Lighting based tools for BBB"
+
+
+# Required minimum versions for this item to run
+requires_shotgun_version:
+requires_core_version: "v0.14.0"
+requires_engine_version: 
+
+# For now this app is only compatible with Nuke.
+supported_engines: ["tk-maya"]
+
+# the frameworks required to run this app
+frameworks:

@@ -1,0 +1,55 @@
+#
+# Copyright (c) 2012 Shotgun Software, Inc
+# ----------------------------------------------------
+#
+# Metadata defining the behaviour and requirements for this app
+
+# expected fields in the configuration file for this app
+configuration:
+    display_name:
+        type: str
+        default_value: Get the latest layout camera for your shot
+        description: Fetches the latest layout camera for the current shot
+
+    maya_asset_presetRoot:
+        type: str
+        default_value: presetsRoot
+        description: Fetches the asset template you want to use for listing the published shader xml file
+    
+    maya_ocean_presetRoot:
+        type: str
+        default_value: maya_lighting_oceanPreset
+        description: Fetches the asset template you want to use for listing the published shader xml file
+    
+    maya_shot_SHD_XML_template:
+        type: str
+        default_value: maya_asset_SHD_XML
+        description: Fetches the asset template you want to use for listing the published shader xml file
+    
+    maya_shot_lighting_template:
+        type: str
+        default_value: maya_shot_lights
+        description: Fetches the template you want to use for listing the published lighting xml
+    
+    maya_shot_renderglobals_template:
+        type: str
+        default_value: maya_shot_renderglobals
+        description: Fetches the template you want to use for rebuilding the renderglobals from xml
+            
+# the Shotgun fields that this app needs in order to operate correctly
+requires_shotgun_fields:
+
+# More verbose description of this item 
+display_name: "1. MultiLoader2.0--"
+description: "Lighting based tools for BBB"
+
+# Required minimum versions for this item to run
+requires_shotgun_version:
+requires_core_version: "v0.14.0"
+requires_engine_version: 
+
+# For now this app is only compatible with Nuke.
+supported_engines: ["tk-maya"]
+
+# the frameworks required to run this app
+frameworks:

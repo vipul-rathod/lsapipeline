@@ -10,8 +10,8 @@
 
 import os, sys
 import maya.cmds as cmds
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 from debug import debug
 import tank
 from tank import Hook

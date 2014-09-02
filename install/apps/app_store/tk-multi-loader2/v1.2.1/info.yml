@@ -125,7 +125,7 @@ supported_engines:
 requires_shotgun_fields:
 
 # More verbose description of this item
-display_name: "Loader"
+display_name: "1. MultiLoader2.0--"
 description: "Locate published files and reference them into your scene."
 
 # Required minimum versions for this item to run

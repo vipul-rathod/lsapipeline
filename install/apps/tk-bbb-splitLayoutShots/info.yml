@@ -1,0 +1,40 @@
+#
+# Copyright (c) 2012 Shotgun Software, Inc
+# ----------------------------------------------------
+#
+# Metadata defining the behaviour and requirements for this app
+
+# expected fields in the configuration file for this app
+configuration:
+    display_name:
+        type: str
+        default_value: Get the latest layout camera for your shot
+        description: Fetches the latest layout camera for the current shot
+
+    shotStep:
+        type: str
+        default_value: Animation
+        description: If you are pulling caches from animation or blocking
+        
+    shotPathTemplate:
+        type: str
+        default_value: maya_shot_work
+        description: Template for base shot path
+
+# the Shotgun fields that this app needs in order to operate correctly
+requires_shotgun_fields:
+
+# More verbose description of this item 
+display_name: "1. MultiLoader2.0--"
+description: "Animation based tools for BBB"
+
+# Required minimum versions for this item to run
+requires_shotgun_version:
+requires_core_version: "v0.14.0"
+requires_engine_version: 
+
+# For now this app is only compatible with Nuke.
+supported_engines: ["tk-maya"]
+
+# the frameworks required to run this app
+frameworks:

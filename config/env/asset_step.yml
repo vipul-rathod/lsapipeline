@@ -5,22 +5,22 @@ engines:
       tk-bbb-mayaOcean:
         button_name: 3. RIG/a. Create a maya ocean for rig testing...
         display_name: 3. RIG/a. Create a maya ocean  for rig testing...
-        location: {name: tk-bbb-mayaOcean, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-mayaOcean',
+        location: {name: tk-bbb-mayaOcean, path: 'T:/software/lsapipeline/install/apps/tk-bbb-mayaOcean',
           type: dev}
         ocean_preset_template: maya_shot_oceanPresets
         ocean_publish_template: maya_shot_publishOceanCache
         shotfx_publish_template: maya_shotfx
       tk-bbb-rebuildCoreArchives:
         display_name: 4. SRF/d. Manage Core Archives
-        location: {name: tk-bbb-setupLighting, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-rebuildCoreArchives',
+        location: {name: tk-bbb-setupLighting, path: 'T:/software/lsapipeline/install/apps/tk-bbb-rebuildCoreArchives',
           type: dev}
       tk-bbb-rebuildMDLCoreArchives:
         display_name: 2. MDL/a. Manage Core Archives
-        location: {name: tk-bbb-setupLighting, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-rebuildCoreArchives',
+        location: {name: tk-bbb-setupLighting, path: 'T:/software/lsapipeline/install/apps/tk-bbb-rebuildCoreArchives',
           type: dev}
       tk-bbb-setupSRF:
         display_name: 4. SRF/b. Setup Lighting
-        location: {name: tk-bbb-setupLighting, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-setupLighting',
+        location: {name: tk-bbb-setupLighting, path: 'T:/software/lsapipeline/install/apps/tk-bbb-setupLighting',
           type: dev}
         mia_physicalskyTemplate: maya_mia_physicalsky
         mia_physicalsunTemplate: maya_mia_physicalsun
@@ -28,7 +28,7 @@ engines:
       tk-changeworkspace:
         button_name: Change workspace
         display_name: Change workspace
-        location: {name: tk-bbb-mayaOcean, path: 'T:/software/bubblebathbay/install/apps/tk-changeworkspace',
+        location: {name: tk-bbb-mayaOcean, path: 'T:/software/lsapipeline/install/apps/tk-changeworkspace',
           type: dev}
       tk-maya-breakdown:
         hook_multi_update: maya_asset_assemblyReference_breakdown_update
@@ -704,20 +704,20 @@ engines:
         template_work_area: asset_work_area_maya
       tk-rebuildLIBSHD:
         display_name: 4. SRF/a. Rebuild LIB asset shaders...
-        location: {name: tk-rebuildPublishedLighting, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-rebuildLIBSHD',
+        location: {name: tk-rebuildPublishedLighting, path: 'T:/software/lsapipeline/install/apps/tk-bbb-rebuildLIBSHD',
           type: dev}
       tk-rebuildPublishedSurfacing:
         display_name: 4. SRF/c. Rebuild Surfacing Scene From Publish
-        location: {name: tk-rebuildPublishedLighting, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-rebuildPublishedSurfacing',
+        location: {name: tk-rebuildPublishedLighting, path: 'T:/software/lsapipeline/install/apps/tk-bbb-rebuildPublishedSurfacing',
           type: dev}
         maya_asset_SHD_XML_template: maya_asset_SHD_XML
         maya_asset_presetRoot: presetsRoot
       tk-submit-maya-playblast:
         cameraSuffix: _shotCam
         display_name: Publish TurnTable For Review...
-        installPath: I:\\bubblebathbay\\!installers\\codecs
+        installPath: I:\\lsapipeline\\!installers\\codecs
         isAsset: true
-        location: {name: tk-submit-mayaplayblast, path: 'T:/software/bubblebathbay/install/apps/tk-submit-mayaplayblast',
+        location: {name: tk-submit-mayaplayblast, path: 'T:/software/lsapipeline/install/apps/tk-submit-mayaplayblast',
           type: dev}
         movie_height: 720
         movie_path_template: maya_asset_playblast

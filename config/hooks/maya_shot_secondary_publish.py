@@ -8,10 +8,10 @@ from tank import TankError
 import xml.etree.cElementTree as ET
 
 ## Now get the custom tools
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-	sys.path.append('T:/software/bubblebathbay/custom')
-if 'T:/software/bubblebathbay/install/apps/tk-bbb-mayaOcean' not in sys.path:
-	sys.path.append('T:/software/bubblebathbay/install/apps/tk-bbb-mayaOcean')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+	sys.path.append('T:/software/lsapipeline/custom')
+if 'T:/software/lsapipeline/install/apps/tk-bbb-mayaOcean' not in sys.path:
+	sys.path.append('T:/software/lsapipeline/install/apps/tk-bbb-mayaOcean')
 import utils as utils
 import CONST as CONST
 from debug import debug

@@ -15,8 +15,8 @@ except:
     debug(None, method = 'core_archive_lib', message = 'metalcore mapi and mlib failed to load!!', verbose = False)
     pass
 ## Now get the custom tools
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 from debug import debug
 import core_archive_lib as coreLib
 import shader_lib as shd

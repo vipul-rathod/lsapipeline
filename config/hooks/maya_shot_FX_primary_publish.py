@@ -15,8 +15,8 @@ import tempfile
 import tank
 from tank import Hook
 from tank import TankError
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 from debug import debug
 
 class PrimaryPublishHook(Hook):

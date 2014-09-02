@@ -15,8 +15,8 @@ import tank
 from tank import Hook
 from tank import TankError
 ## Custom imports
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 import maya_asset_MASTERCLEANUPCODE as cleanup
 from debug import debug
 #reload(cleanup)

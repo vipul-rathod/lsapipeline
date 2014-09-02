@@ -21,8 +21,8 @@ import os, sys
 from mentalcore import mlib
 from mentalcore import mapi
 ## Now get the custom tools
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 from debug import debug
 import core_archive_lib as coreLib
 import maya_asset_MASTERCLEANUPCODE as cleanup

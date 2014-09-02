@@ -1,0 +1,14 @@
+(dp1
+S'source'
+p2
+S'C:/cygwin32/home/Administrator/bubblebathbay'
+p3
+sS'destination'
+p4
+S'I:\\lsapipeline\\assets'
+p5
+sS'local'
+p6
+S'True'
+p7
+s.

@@ -4,12 +4,12 @@ engines:
     apps:
       tk-fxVersionChecker:
         display_name: 5. FX/2. FX Version Checker
-        location: {name: tk-bbb-StaticENVHandler, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-fxVersionChecker',
+        location: {name: tk-bbb-StaticENVHandler, path: 'T:/software/lsapipeline/install/apps/tk-bbb-fxVersionChecker',
           type: dev}
         primary_publish_template: maya_shot_publish
       tk-lightingVersionChecker:
         display_name: 4. Light/e. Light Version Checker
-        location: {name: tk-bbb-lightingVersionChecker, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-lightingVersionChecker',
+        location: {name: tk-bbb-lightingVersionChecker, path: 'T:/software/lsapipeline/install/apps/tk-bbb-lightingVersionChecker',
           type: dev}
         primary_publish_template: maya_shot_publish
         static_alembic_cache: maya_shot_static_alembic
@@ -23,7 +23,7 @@ engines:
         camera_publish_template: maya_shot_cam_versionFolder
         corearchive_template: maya_LND_corexml
         display_name: 4. Light/a. BaseBuild/1. Setup Animation Caches|Cores|Ocean...
-        location: {name: tk-FetchAnimAssets, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-fetchCaches',
+        location: {name: tk-FetchAnimAssets, path: 'T:/software/lsapipeline/install/apps/tk-bbb-fetchCaches',
           type: dev}
         movie_height: 720
         movie_width: 1280
@@ -37,7 +37,7 @@ engines:
         camera_publish_template: maya_shot_cam_versionFolder
         corearchive_template: maya_LND_corexml
         display_name: 4. Light/a. BaseBuild/0. Setup Layout Caches|Cores|Ocean...
-        location: {name: tk-FetchAnimAssets, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-fetchCaches',
+        location: {name: tk-FetchAnimAssets, path: 'T:/software/lsapipeline/install/apps/tk-bbb-fetchCaches',
           type: dev}
         movie_height: 720
         movie_width: 1280
@@ -47,16 +47,16 @@ engines:
         static_alembic_publish_template: maya_shot_static_alembic_versionFolder
       tk-StaticEnvHandler:
         display_name: 4. Light/c. Static ENV Handler
-        location: {name: tk-bbb-StaticENVHandler, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-StaticENVHandler',
+        location: {name: tk-bbb-StaticENVHandler, path: 'T:/software/lsapipeline/install/apps/tk-bbb-StaticENVHandler',
           type: dev}
       tk-AnimEnvHandler:
         display_name: 4. Light/d. Anim ENV Handler
-        location: {name: tk-bbb-AnimEnvHandler, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-AnimEnvHandler',
+        location: {name: tk-bbb-AnimEnvHandler, path: 'T:/software/lsapipeline/install/apps/tk-bbb-AnimEnvHandler',
           type: dev}
       tk-bbb-LayoutMayaOcean:
         button_name: Create a maya ocean per shot.
         display_name: 2. Layout/d. Create Layout Ocean
-        location: {name: tk-bbb-mayaOcean, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-mayaOcean',
+        location: {name: tk-bbb-mayaOcean, path: 'T:/software/lsapipeline/install/apps/tk-bbb-mayaOcean',
           type: dev}
         ocean_preset_template: maya_shot_oceanPresets
         ocean_publish_template: maya_shot_publishOceanCache
@@ -64,7 +64,7 @@ engines:
       tk-bbb-animMayaOcean:
         button_name: Create a Maya ocean per shot.
         display_name: 3. Anim/1. Create Ocean Setup
-        location: {name: tk-bbb-mayaOcean, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-mayaOcean',
+        location: {name: tk-bbb-mayaOcean, path: 'T:/software/lsapipeline/install/apps/tk-bbb-mayaOcean',
           type: dev}
         ocean_preset_template: maya_shot_oceanPresets
         ocean_publish_template: maya_shot_publishOceanCache
@@ -72,7 +72,7 @@ engines:
       tk-bbb-createShotCam:
         display_name: 2. Layout/b. Create shotCamera
         fps: 25
-        location: {name: tk-bbb-createShotCam, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-createShotCam',
+        location: {name: tk-bbb-createShotCam, path: 'T:/software/lsapipeline/install/apps/tk-bbb-createShotCam',
           type: dev}
         movie_height: 720
         movie_width: 1280
@@ -80,16 +80,16 @@ engines:
         shot_root_template: shot_root
       tk-bbb-duplicateLayoutAssets:
         display_name: 2. Layout/e. Duplicate Shot Assets
-        location: {name: tk-bbb-createShotCam, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-duplicateAssets',
+        location: {name: tk-bbb-createShotCam, path: 'T:/software/lsapipeline/install/apps/tk-bbb-duplicateAssets',
           type: dev}
       tk-bbb-duplicateShotAssets:
         display_name: 3. Anim/2. Duplicate Shot Assets
-        location: {name: tk-bbb-createShotCam, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-duplicateAssets',
+        location: {name: tk-bbb-createShotCam, path: 'T:/software/lsapipeline/install/apps/tk-bbb-duplicateAssets',
           type: dev}
       tk-bbb-mayaOcean:
         button_name: Create a maya ocean per shot.
         display_name: 5. FX/1. Ocean FX Setup
-        location: {name: tk-bbb-mayaOcean, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-mayaOcean',
+        location: {name: tk-bbb-mayaOcean, path: 'T:/software/lsapipeline/install/apps/tk-bbb-mayaOcean',
           type: dev}
         ocean_preset_template: maya_shot_oceanPresets
         ocean_publish_template: maya_shot_publishOceanCache
@@ -97,16 +97,16 @@ engines:
       tk-bbb-packageRemoteShotAssets:
         button_name: Create a tar file with assets for this shot.
         display_name: REMOTE/1. Create Shot Asset Archive
-        location: {name: tk-bbb-packageRemoteShotAssets, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-packageRemoteShotAssets',
+        location: {name: tk-bbb-packageRemoteShotAssets, path: 'T:/software/lsapipeline/install/apps/tk-bbb-packageRemoteShotAssets',
           type: dev}
         sg_AssetTemplate: maya_asset_publish
       tk-bbb-rebuildCoreArchives:
         display_name: 4. Light/a. BaseBuild/4. Manage Core Archives
-        location: {name: tk-bbb-setupLighting, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-rebuildCoreArchives',
+        location: {name: tk-bbb-setupLighting, path: 'T:/software/lsapipeline/install/apps/tk-bbb-rebuildCoreArchives',
           type: dev}
       tk-bbb-setupLighting:
         display_name: 4. Light/a. BaseBuild/5. Setup Lighting
-        location: {name: tk-bbb-setupLighting, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-setupLighting',
+        location: {name: tk-bbb-setupLighting, path: 'T:/software/lsapipeline/install/apps/tk-bbb-setupLighting',
           type: dev}
         mia_physicalskyTemplate: maya_mia_physicalsky
         mia_physicalsunTemplate: maya_mia_physicalsun
@@ -116,7 +116,7 @@ engines:
         camera_publish_template: maya_shot_cam_versionFolder
         corearchive_template: maya_LND_corexml
         display_name: 4. Light/b. Iteration/1. Fetch Latest Animation Caches
-        location: {name: tk-bbb-fetchCaches, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-fetchCaches',
+        location: {name: tk-bbb-fetchCaches, path: 'T:/software/lsapipeline/install/apps/tk-bbb-fetchCaches',
           type: dev}
         movie_height: 720
         movie_width: 1280
@@ -126,7 +126,7 @@ engines:
         static_alembic_publish_template: maya_shot_static_alembic_versionFolder
       tk-fetchLightingShaders:
         display_name: 4. Light/a. BaseBuild/3. Rebuild Shaders
-        location: {name: tk-fetchLightingShaders, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-fetchLightingShaders',
+        location: {name: tk-fetchLightingShaders, path: 'T:/software/lsapipeline/install/apps/tk-bbb-fetchLightingShaders',
           type: dev}
         maya_asset_SHD_XML_template: maya_asset_SHD_XML
         maya_asset_presetRoot: presetsRoot
@@ -135,14 +135,14 @@ engines:
       tk-fetchShotAssets:
         camera_publish_template: maya_shot_cam
         display_name: 2. Layout/a. Fetch Shot Assets
-        location: {name: tk-fetchShotAssets, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-fetchShotAssets',
+        location: {name: tk-fetchShotAssets, path: 'T:/software/lsapipeline/install/apps/tk-bbb-fetchShotAssets',
           type: dev}
         movie_height: 720
         movie_width: 1280
         sg_AssetTemplate: maya_asset_publish
       tk-fetchUVs:
         display_name: 4. Light/a. BaseBuild/2. Rebuild UVs
-        location: {name: tk-fetchUVs, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-fetchUVs',
+        location: {name: tk-fetchUVs, path: 'T:/software/lsapipeline/install/apps/tk-bbb-fetchUVs',
           type: dev}
         maya_asset_uv_template: maya_asset_uvxml
       tk-maya-breakdown:
@@ -673,7 +673,7 @@ engines:
         template_work_area: shot_work_area_maya
       tk-rebuildPublishedLighting:
         display_name: 4. Light/b. Iteration/2. Rebuild Lighting Scene From Publish
-        location: {name: tk-rebuildPublishedLighting, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-rebuildPublishedLighting',
+        location: {name: tk-rebuildPublishedLighting, path: 'T:/software/lsapipeline/install/apps/tk-bbb-rebuildPublishedLighting',
           type: dev}
         maya_asset_presetRoot: presetsRoot
         maya_ocean_presetRoot: maya_lighting_oceanPreset
@@ -682,22 +682,22 @@ engines:
         maya_shot_renderglobals_template: maya_shot_renderglobals
       tk-splitLayoutShots:
         display_name: 2. Layout/g. Split Layout Shots
-        location: {name: tk-SplitLayoutShots, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-splitLayoutShots',
+        location: {name: tk-SplitLayoutShots, path: 'T:/software/lsapipeline/install/apps/tk-bbb-splitLayoutShots',
           type: dev}
         movie_workpath_template: maya_shotwork_playblast
         shotPathTemplate: maya_shot_work
         shotStep: Blocking
       tk-fetchStoryBoard:
         display_name: 2. Layout/h. Fetch StoryBoard
-        location: {name: tk-FetchStoryBoard, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-fetchStoryBoard',
+        location: {name: tk-FetchStoryBoard, path: 'T:/software/lsapipeline/install/apps/tk-bbb-fetchStoryBoard',
           type: dev}
         shotStep: Blocking
       tk-submit-maya-playblast:
         cameraSuffix: _shotCam
         display_name: Playblast...
-        installPath: I:\\bubblebathbay\\!installers\\codecs
+        installPath: I:\\lsapipeline\\!installers\\codecs
         isAsset: false
-        location: {name: tk-submit-mayaplayblast, path: 'T:/software/bubblebathbay/install/apps/tk-submit-mayaplayblast',
+        location: {name: tk-submit-mayaplayblast, path: 'T:/software/lsapipeline/install/apps/tk-submit-mayaplayblast',
           type: dev}
         movie_height: 720
         movie_path_template: maya_shot_playblast
@@ -736,7 +736,7 @@ engines:
         tank_types: [Rendered Image]
         title_name: Add Rendered Images & Sequences to your Scene
       tk-bbb-submitToDeadline:
-        location: {name: tk-bbb-submitToDeadline, path: 'T:/software/bubblebathbay/install/apps/tk-bbb-submitToDeadline', type: dev}
+        location: {name: tk-bbb-submitToDeadline, path: 'T:/software/lsapipeline/install/apps/tk-bbb-submitToDeadline', type: dev}
         menu_name: Submit To Deadline
         title_name: Submit renders to deadline
       tk-multi-loader2-RenderLoader2.0:

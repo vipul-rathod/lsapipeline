@@ -14,8 +14,8 @@ Hook which chooses an environment file to use based on the current context.
 """
 import sys
 from tank import Hook
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 from debug import debug
 
 class PickEnvironment(Hook):

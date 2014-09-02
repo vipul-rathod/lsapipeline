@@ -13,10 +13,10 @@ from maya import cmds, mel
 import tank
 from tank import Hook
 from tank import TankError
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
-if 'T:/software/bubblebathbay/install/apps/tk-bbb-mayaOcean' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/install/apps/tk-bbb-mayaOcean')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
+if 'T:/software/lsapipeline/install/apps/tk-bbb-mayaOcean' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/install/apps/tk-bbb-mayaOcean')
 import maya_asset_MASTERCLEANUPCODE as cleanup
 import fluids_lib as fluidsLib
 import maya_genericSettings as settings

@@ -1,0 +1,75 @@
+#
+# Copyright (c) 2012 Shotgun Software, Inc
+# ----------------------------------------------------
+#
+# Metadata defining the behaviour and requirements for this app
+
+# expected fields in the configuration file for this app
+configuration:
+    display_name:
+        type: str
+        default_value: Get the latest layout camera for your shot
+        description: Fetches the latest layout camera for the current shot
+
+    corearchive_template:
+        type: str
+        default_value: maya_LND_corexml
+        description: Fetches the asset template you want to use for core archive xml
+
+    static_alembic_publish_template:
+        type: str
+        default_value: maya_shot_static_alembic
+        description: Fetches the asset template you want to use for listing the assets
+    
+    anim_alembic_publish_template:
+        type: str
+        default_value: maya_shot_anim_alembic
+        description: Fetches the asset template you want to use for listing the assets
+
+    shotfx_publish_template:
+        type: str
+        default_value: maya_shotfx
+        description: Fetches the asset template you want to use for listing the assets
+
+    shot_gpu_publish_template:
+        type: str
+        default_value: maya_shot_gpu
+        description: Fetches the asset template you want to use for listing the assets
+
+    camera_publish_template:
+        type: str
+        default_value: maya_shot_cam
+        description: Fetches the asset template you want to use for listing the assets
+
+    movie_width:
+        type: int
+        default_value: 1280
+        description: The width of the rendered movie file
+
+    movie_height:
+        type: int
+        default_value: 720
+        description: The height of the rendered movie file
+
+    shotStep:
+        type: str
+        default_value: Animation
+        description: If you are pulling caches from animation or blocking
+
+# the Shotgun fields that this app needs in order to operate correctly
+requires_shotgun_fields:
+
+# More verbose description of this item 
+display_name: "1. MultiLoader2.0--"
+description: "Lighting based tools for BBB"
+
+# Required minimum versions for this item to run
+requires_shotgun_version:
+requires_core_version: "v0.14.0"
+requires_engine_version: 
+
+# For now this app is only compatible with Nuke.
+supported_engines: ["tk-maya"]
+
+# the frameworks required to run this app
+frameworks:

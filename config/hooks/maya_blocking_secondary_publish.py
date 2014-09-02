@@ -6,8 +6,8 @@ import tank
 from tank import Hook
 from tank import TankError
 ## Now get the custom tools
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 import utils as utils
 import CONST as CONST
 from debug import debug

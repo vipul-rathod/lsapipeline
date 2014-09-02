@@ -1,0 +1,14 @@
+(dp1
+S'source'
+p2
+S'I:\\lsapipeline\\assets'
+p3
+sS'destination'
+p4
+S'jamesd@120.150.180.153:/home/jamesd/bubblebathbay'
+p5
+sS'local'
+p6
+S'False'
+p7
+s.

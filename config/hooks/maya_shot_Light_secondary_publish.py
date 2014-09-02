@@ -9,8 +9,8 @@ from tank import Hook
 from tank import TankError
 from getpass import getuser
 import subprocess, tempfile, socket
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 import maya_asset_MASTERCLEANUPCODE as cleanup
 from debug import debug
 import FromMaya2Nuke as fm2n

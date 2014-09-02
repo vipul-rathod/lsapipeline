@@ -20,8 +20,8 @@ import tank
 import os, sys
 import sgtk
 
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 from debug import debug
 import utils as utils
 import maya_genericSettings as settings

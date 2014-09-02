@@ -19,10 +19,10 @@ different. See code comments for details.
 import tank, os, sgtk, sys
 ## Custom stuff
 import maya.mel as mel
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
-if 'T:/software/bubblebathbay/install/apps/tk-bbb-mayaOcean' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/install/apps/tk-bbb-mayaOcean')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
+if 'T:/software/lsapipeline/install/apps/tk-bbb-mayaOcean' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/install/apps/tk-bbb-mayaOcean')
 import maya_asset_MASTERCLEANUPCODE as cleanup
 from debug import debug
 #reload(cleanup)
@@ -56,7 +56,7 @@ class AddFileToScene(tank.Hook):
         # get the slashes right
         file_path = file_path.replace(os.path.sep, "/")
         debug(app = None, method = 'add_file_to_maya', message = 'file_path: %s' % file_path, verbose = False)
-        #file_path: I:/bubblebathbay/episodes/eptst/eptst_sh2000/Anm/publish/maya/eptstsh2000.v002.mb
+        #file_path: I:/lsapipeline/episodes/eptst/eptst_sh2000/Anm/publish/maya/eptstsh2000.v002.mb
         
                 
         file_version = int(file_path.split('.')[1].split('v')[-1])

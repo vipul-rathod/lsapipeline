@@ -21,8 +21,8 @@ try:
 except:
     cmds.warning('NO MENTAL CORE LOADED!!!')
 ## Now get the custom tools
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
 
 import utils as utils
 import shader_lib as shd
@@ -279,7 +279,7 @@ class MayaActions(HookBaseClass):
                     i = True,
                     type = 'atomImport',
                     renameAll = True,
-                    options = ';;targetTime=3;option=insert;match=string;;selected=childrenToo;search=;replace=;prefix=;suffix=;mapFile=I:/bubblebathbay/episodes/training/training_sh007/FX/work/maya/data;',
+                    options = ';;targetTime=3;option=insert;match=string;;selected=childrenToo;search=;replace=;prefix=;suffix=;mapFile=I:/lsapipeline/episodes/training/training_sh007/FX/work/maya/data;',
                     )
 
         ## Force delete ATOM UI...
@@ -316,7 +316,7 @@ class MayaActions(HookBaseClass):
     def _fetchAssetXML(self, path, sg_publish_data):
         #print path, sg_publish_data
         ## I:\bubblebathbay\assets\Environment\BBB_JBDDUMMY_LND\SRF\publish\uvxml\BBBJBDDUMMYLND.xml 
-        ## {'version.Version.sg_status_list': None, 'task.Task.due_date': None, 'version_number': 53, 'code': 'BBBJBDDUMMYLND.xml', 'description': None, 'task.Task.sg_status_list': 'wtg', 'image': 'https://sg-media-usor-01.s3.amazonaws.com/ea241984334a6d66408726328553b1baecf5f5f9/49d59fec2908edc8a73bfe3eb0fc776de1058770/no_preview_t.jpg?AWSAccessKeyId=AKIAIFHY52V77FIVWKLQ&Expires=1401237658&Signature=lkCn8kdlHILUj16W%2FTqnagQWBQ4%3D', 'published_file_type': {'type': 'PublishedFileType', 'id': 1, 'name': 'Maya Scene'}, 'entity': {'type': 'Asset', 'id': 1768, 'name': 'BBB_JBDDUMMY_LND'}, 'task.Task.content': 'Surface', 'task': {'type': 'Task', 'id': 24841, 'name': 'Surface'}, 'version': None, 'path': {'local_path_windows': 'I:\\bubblebathbay\\assets\\Environment\\BBB_JBDDUMMY_LND\\SRF\\publish\\uvxml\\BBBJBDDUMMYLND.xml', 'name': 'BBBJBDDUMMYLND.xml', 'local_path_linux': None, 'url': 'file://I:\\bubblebathbay\\assets\\Environment\\BBB_JBDDUMMY_LND\\SRF\\publish\\uvxml\\BBBJBDDUMMYLND.xml', 'local_storage': {'type': 'LocalStorage', 'id': 1, 'name': 'primary'}, 'local_path': 'I:\\bubblebathbay\\assets\\Environment\\BBB_JBDDUMMY_LND\\SRF\\publish\\uvxml\\BBBJBDDUMMYLND.xml', 'content_type': None, 'local_path_mac': '/Volumes/bubblebathbay3D/bubblebathbay/assets/Environment/BBB_JBDDUMMY_LND/SRF/publish/uvxml/BBBJBDDUMMYLND.xml', 'type': 'Attachment', 'id': 46475, 'link_type': 'local'}, 'type': 'PublishedFile', 'id': 24964, 'name': 'BBBJBDDUMMYLNDXML'}
+        ## {'version.Version.sg_status_list': None, 'task.Task.due_date': None, 'version_number': 53, 'code': 'BBBJBDDUMMYLND.xml', 'description': None, 'task.Task.sg_status_list': 'wtg', 'image': 'https://sg-media-usor-01.s3.amazonaws.com/ea241984334a6d66408726328553b1baecf5f5f9/49d59fec2908edc8a73bfe3eb0fc776de1058770/no_preview_t.jpg?AWSAccessKeyId=AKIAIFHY52V77FIVWKLQ&Expires=1401237658&Signature=lkCn8kdlHILUj16W%2FTqnagQWBQ4%3D', 'published_file_type': {'type': 'PublishedFileType', 'id': 1, 'name': 'Maya Scene'}, 'entity': {'type': 'Asset', 'id': 1768, 'name': 'BBB_JBDDUMMY_LND'}, 'task.Task.content': 'Surface', 'task': {'type': 'Task', 'id': 24841, 'name': 'Surface'}, 'version': None, 'path': {'local_path_windows': 'I:\\bubblebathbay\\assets\\Environment\\BBB_JBDDUMMY_LND\\SRF\\publish\\uvxml\\BBBJBDDUMMYLND.xml', 'name': 'BBBJBDDUMMYLND.xml', 'local_path_linux': None, 'url': 'file://I:\\bubblebathbay\\assets\\Environment\\BBB_JBDDUMMY_LND\\SRF\\publish\\uvxml\\BBBJBDDUMMYLND.xml', 'local_storage': {'type': 'LocalStorage', 'id': 1, 'name': 'primary'}, 'local_path': 'I:\\bubblebathbay\\assets\\Environment\\BBB_JBDDUMMY_LND\\SRF\\publish\\uvxml\\BBBJBDDUMMYLND.xml', 'content_type': None, 'local_path_mac': '/Volumes/bubblebathbay3D/lsapipeline/assets/Environment/BBB_JBDDUMMY_LND/SRF/publish/uvxml/BBBJBDDUMMYLND.xml', 'type': 'Attachment', 'id': 46475, 'link_type': 'local'}, 'type': 'PublishedFile', 'id': 24964, 'name': 'BBBJBDDUMMYLNDXML'}
         ## Find the assets parent group in the scene now..
         parentGrp = cmds.listRelatives('%s_hrc' % sg_publish_data['entity']["name"], p = True) or ''
             
@@ -694,7 +694,7 @@ class MayaActions(HookBaseClass):
                     'local_storage': {'type': 'LocalStorage', 'id': 1, 'name': 'primary'}, 
                     'local_path': 'I:\\bubblebathbay\\assets\\Building\\jbd_dummybld_BLD\\SRFVar_01\\publish\\xml\\jbddummybldBLD.v007.xml', 
                     'content_type': None, 
-                    'local_path_mac': '/Volumes/bubblebathbay3D/bubblebathbay/assets/Building/jbd_dummybld_BLD/SRFVar_01/publish/xml/jbddummybldBLD.v007.xml', 
+                    'local_path_mac': '/Volumes/bubblebathbay3D/lsapipeline/assets/Building/jbd_dummybld_BLD/SRFVar_01/publish/xml/jbddummybldBLD.v007.xml', 
                     'type': 'Attachment', 'id': 6202, 'link_type': 'local'}, 
                     'type': 'PublishedFile', 
                     'id': 4752, 
@@ -740,7 +740,7 @@ class MayaActions(HookBaseClass):
         # get the slashes right
         file_path = path.replace(os.path.sep, "/")
         debug(app = None, method = 'add_file_to_maya', message = 'file_path: %s' % file_path, verbose = False)
-        #file_path: I:/bubblebathbay/episodes/eptst/eptst_sh2000/Anm/publish/maya/eptstsh2000.v002.mb
+        #file_path: I:/lsapipeline/episodes/eptst/eptst_sh2000/Anm/publish/maya/eptstsh2000.v002.mb
         
                 
         file_version = int(file_path.split('.')[1].split('v')[-1])
@@ -830,7 +830,7 @@ class MayaActions(HookBaseClass):
         # get the slashes right
         file_path = path.replace(os.path.sep, "/")
         debug(app = None, method = 'add_file_to_maya', message = 'file_path: %s' % file_path, verbose = False)
-        #file_path: I:/bubblebathbay/episodes/eptst/eptst_sh2000/Anm/publish/maya/eptstsh2000.v002.mb
+        #file_path: I:/lsapipeline/episodes/eptst/eptst_sh2000/Anm/publish/maya/eptstsh2000.v002.mb
 
         file_version = int(file_path.split('.')[1].split('v')[-1])
         debug(app = None, method = 'add_file_to_maya', message = 'file_version: %s' % file_version, verbose = False)

@@ -6,10 +6,10 @@ import tank
 from tank import Hook
 from tank import TankError
 ## Now get the custom tools
-if 'T:/software/bubblebathbay/custom' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/custom')
-if 'T:/software/bubblebathbay/install/apps/tk-bbb-mayaOcean' not in sys.path:
-    sys.path.append('T:/software/bubblebathbay/install/apps/tk-bbb-mayaOcean')
+if 'T:/software/lsapipeline/custom' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/custom')
+if 'T:/software/lsapipeline/install/apps/tk-bbb-mayaOcean' not in sys.path:
+    sys.path.append('T:/software/lsapipeline/install/apps/tk-bbb-mayaOcean')
 from debug import debug
 import utils as utils
 import fluids_lib as fluidLib
@@ -482,7 +482,7 @@ class PublishHook(Hook):
 
             ## Set lambert1 to green matte
             cmds.setAttr("lambert1.color", 0, 10, 0, type = 'double3')
-            cmds.setAttr("lambert1.transparency", 1, 1, 1, type = 'double3')
+            cmds.setAttr("lambert1.transparency", 0, 0, 0, type = 'double3')
             cmds.setAttr("lambert1.ambientColor", 0, 10, 0, type = 'double3')
             cmds.setAttr("lambert1.incandescence", 0, 10, 0, type = 'double3')
             cmds.setAttr("lambert1.diffuse", 0)
@@ -520,7 +520,7 @@ class PublishHook(Hook):
             ## Find all mesh in scene that has smoothed checked and Mentalray preview smooth them...
             mesh_with_smoothTag = [cmds.listRelatives(mesh, parent = True, fullPath = True)[0] for mesh in cmds.ls(type = 'mesh') if cmds.objExists('%s.smoothed' % cmds.listRelatives(mesh, parent = True, fullPath = True)[0])]
             mesh_with_smoothTag = [mesh for mesh in mesh_with_smoothTag if cmds.getAttr('%s.smoothed' % mesh)]
-            [cmds.displaySmoothness(each, polygonObject = 3) for each in mesh_with_smoothTag if 'CHAR_' in each]
+            [cmds.displaySmoothness(each, polygonObject = 3) for each in mesh_with_smoothTag if 'CHAR_' in each or 'PROP_' in each]
 
             ## Playblast rendering
             cmds.playblast( filename = os.path.join(publish_path, epShotName).replace('\\', '/'),

@@ -34,7 +34,7 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 }
 Root {
  inputs 0
- name T:/software/bubblebathbay/config/core/schema/primary/episodes/episode/shot/step/work/nuke/shotBaseScript.v001.nk
+ name T:/software/lsapipeline/config/core/schema/primary/episodes/episode/shot/step/work/nuke/shotBaseScript.v001.nk
  frame 69
  lock_range true
  format "2048 1556 0 0 2048 1556 1 2K_Super_35(full-ap)"
@@ -691,7 +691,7 @@ Reformat {
 }
 Read {
  inputs 0
- file //192.168.5.252/BBB_main/bbb/k/bubblebathbay/sourceimages/starField.tga
+ file //192.168.5.252/BBB_main/bbb/k/lsapipeline/sourceimages/starField.tga
  format "4096 2048 0 0 4096 2048 1 "
  origset true
  name Read1
@@ -877,7 +877,7 @@ Saturation {
 }
 Read {
  inputs 0
- file //192.168.5.252/BBB_main/bbb/k/bubblebathbay/sourceimages/ENV_Night.png
+ file //192.168.5.252/BBB_main/bbb/k/lsapipeline/sourceimages/ENV_Night.png
  format "1280 720 0 0 1280 720 0.999563 "
  origset true
  version 1
@@ -2061,7 +2061,7 @@ EdgeBlur {
 push $N1a8c2720
 Read {
  inputs 0
- file //192.168.5.252/BBB_main/bbb/k/bubblebathbay/sourceimages/Moon.png
+ file //192.168.5.252/BBB_main/bbb/k/lsapipeline/sourceimages/Moon.png
  format "4000 4000 0 0 4000 4000 1 "
  origset true
  premultiplied true
@@ -2462,7 +2462,7 @@ Saturation {
 }
 Read {
  inputs 0
- file //192.168.5.252/BBB_main/bbb/k/bubblebathbay/sourceimages/ENV_Dusk.png
+ file //192.168.5.252/BBB_main/bbb/k/lsapipeline/sourceimages/ENV_Dusk.png
  format "1280 720 0 0 1280 720 0.999563 "
  origset true
  name ENV_Dusk
@@ -2471,7 +2471,7 @@ Read {
 }
 Read {
  inputs 0
- file //192.168.5.252/BBB_main/bbb/k/bubblebathbay/sourceimages/ENV_Sunset.png
+ file //192.168.5.252/BBB_main/bbb/k/lsapipeline/sourceimages/ENV_Sunset.png
  format "1280 720 0 0 1280 720 0.999563 "
  origset true
  name ENV_Sunset
@@ -2480,7 +2480,7 @@ Read {
 }
 Read {
  inputs 0
- file //192.168.5.252/BBB_main/bbb/k/bubblebathbay/sourceimages/ENV_AfternoonLate.png
+ file //192.168.5.252/BBB_main/bbb/k/lsapipeline/sourceimages/ENV_AfternoonLate.png
  format "1280 720 0 0 1280 720 0.999563 "
  origset true
  name ENV_AfternoonLate
@@ -2489,7 +2489,7 @@ Read {
 }
 Read {
  inputs 0
- file //192.168.5.252/BBB_main/bbb/k/bubblebathbay/sourceimages/ENV_Afternoon.png
+ file //192.168.5.252/BBB_main/bbb/k/lsapipeline/sourceimages/ENV_Afternoon.png
  format "1280 720 0 0 1280 720 0.999563 "
  origset true
  name ENV_Afternoon
@@ -2498,7 +2498,7 @@ Read {
 }
 Read {
  inputs 0
- file //192.168.5.252/BBB_main/bbb/k/bubblebathbay/sourceimages/ENV_Midday.png
+ file //192.168.5.252/BBB_main/bbb/k/lsapipeline/sourceimages/ENV_Midday.png
  format "1280 720 0 0 1280 720 0.999563 "
  origset true
  name ENV_Midday
@@ -2507,7 +2507,7 @@ Read {
 }
 Read {
  inputs 0
- file //192.168.5.252/BBB_main/bbb/k/bubblebathbay/sourceimages/ENV_Morning.png
+ file //192.168.5.252/BBB_main/bbb/k/lsapipeline/sourceimages/ENV_Morning.png
  format "1280 720 0 0 1280 720 0.999563 "
  origset true
  version 1
@@ -2517,7 +2517,7 @@ Read {
 }
 Read {
  inputs 0
- file //192.168.5.252/BBB_main/bbb/k/bubblebathbay/sourceimages/ENV_Sunrise.png
+ file //192.168.5.252/BBB_main/bbb/k/lsapipeline/sourceimages/ENV_Sunrise.png
  format "1280 720 0 0 1280 720 0.999563 "
  origset true
  name ENV_Sunrise
@@ -2526,7 +2526,7 @@ Read {
 }
 Read {
  inputs 0
- file //192.168.5.252/BBB_main/bbb/k/bubblebathbay/sourceimages/ENV_Dawn.png
+ file //192.168.5.252/BBB_main/bbb/k/lsapipeline/sourceimages/ENV_Dawn.png
  format "1280 720 0 0 1280 720 0.999563 "
  origset true
  name ENV_Dawn
@@ -4750,7 +4750,7 @@ Camera2 {
 }
 Read {
  inputs 0
- file //192.168.5.252/BBB_main/bbb/k/bubblebathbay/sourceimages/ENV_Sun.png
+ file //192.168.5.252/BBB_main/bbb/k/lsapipeline/sourceimages/ENV_Sun.png
  format "4000 4000 0 0 4000 4000 1 "
  origset true
  premultiplied true
