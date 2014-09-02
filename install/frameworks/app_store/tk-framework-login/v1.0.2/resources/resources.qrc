@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="tk-framework-login">
+    <file>shotgun_with_text_logo.png</file>
+    <file>shotgun_logo.png</file>
+  </qresource>
+</RCC>

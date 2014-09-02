@@ -1,0 +1,6 @@
+launch_nuke$Launch Nuke$$False
+__upgrade_check$Check for App Upgrades...$Artist$False
+show_in_filesystem$Show in File System$$True
+launch_photoshop$Launch Photoshop$$False
+__core_info$Check for Core Upgrades...$Artist$False
+launch_maya$Launch Maya$$False

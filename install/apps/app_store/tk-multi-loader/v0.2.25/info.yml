@@ -1,0 +1,124 @@
+# Copyright (c) 2013 Shotgun Software Inc.
+# 
+# CONFIDENTIAL AND PROPRIETARY
+# 
+# This work is provided "AS IS" and subject to the Shotgun Pipeline Toolkit 
+# Source Code License included in this distribution package. See LICENSE.
+# By accessing, using, copying or modifying this work you indicate your 
+# agreement to the Shotgun Pipeline Toolkit Source Code License. All rights 
+# not expressly granted therein are reserved by Shotgun Software Inc.
+
+# Metadata defining the behaviour and requirements for this app
+
+# expected fields in the configuration file for this app
+configuration:
+    menu_name:
+        type: str
+        default_value: "Load Objects..."
+        description: Name to appear on the Shotgun menu.
+
+    title_name:
+        type: str
+        default_value: "Add items to your Scene"
+        description: Name to appear on the title of the UI Dialog.
+
+    button_name:
+        type: str
+        default_value: "Load Selected Item"
+        description: Name to appear on the load button.
+
+    dependency_mode:
+        type: bool
+        default_value: false
+        description: If enabled, the loader app will display versions in the middle pane
+                     and dependent files in the right most pane.
+
+    single_select:
+        type: bool
+        default_value: true
+        description: If set to true, the loader dialog will close automatically once an
+                     item has been loaded.
+
+    sg_entity_types:
+        type: dict
+        description: "Types of Shotgun entities to present in the left-most column in the browser.
+                      Typically these are Shots and Assets but could also be Mocap Takes, Elements
+                      or custom entities. The value should be organized as a dictionary, where the 
+                      key is the Entity Type and the value is a list of Shotgun filters that will be
+                      used when retrieving the list of items. If no filter is specified, all items
+                      will be loaded. For example, if you want to display only shots  
+                      that are in progress, set the value to:
+                      
+                          {'Shot': [['sg_status_list', 'is', 'ip']]}
+                      
+                      Properties from the context can also be used in the shotgun filters. Valid 
+                      properties are:
+                      
+                          {context.entity}
+                          {context.project}
+                          {context.step}
+                          {context.task}
+                          {context.user}
+                          
+                      For example, to show all shots belonging to the project in the current context, 
+                      set the value to: 
+                      
+                          {'Shot' : [[project, is, '{context.project}']]}"
+                      
+        default_value: {"Shot": [] }
+
+    tank_types:
+        type: list
+        description: "List of Published file types to include in the publish listings. Leaving the list
+                      empty will include all types."
+        allows_empty: True
+        values:
+            type: tank_type
+            
+    publish_filters:
+        type: list
+        description: "List of additional shotgun filters to apply to the publish listings.  These
+                      are in addition to filtering on current entity and any specified tank_types.
+                      
+                      Context properties can also be used in publish filters.  For example, to show
+                      all publishes for the user in the current context, set the value to:
+                      
+                          [['created_by', 'is', '{context.user}']"
+        values:
+            type: shotgun_filter
+            
+        allows_empty: True
+        default_value: []
+                    
+    hook_add_file_to_scene:
+        type: hook
+        description: Called when a file is loaded. The file_path parameter will contain a path 
+                     to the file on disk to load and the shotgun_data parameter is a dictionary
+                     of associated shotgun data.
+        parameters: [engine_name, file_path, shotgun_data]
+        default_value: multi_add_file_to_scene
+            
+
+# this app works in all engines - it does not contain 
+# any host application specific commands
+supported_engines: 
+
+
+# the Shotgun fields that this app needs in order to operate correctly
+requires_shotgun_fields:
+
+
+# More verbose description of this item 
+display_name: "Loader"
+description: "Locate and Open Files on Disk."
+
+# Required minimum versions for this item to run
+requires_shotgun_version:
+requires_core_version: "v0.14.48"
+requires_engine_version:
+
+# the frameworks required to run this app
+frameworks:
+    - {"name": "tk-framework-widget", "version": "v0.1.24"}
+    - {"name": "tk-framework-shotgunutils", "version": "v1.x.x"}
+    

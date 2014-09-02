@@ -1,0 +1,56 @@
+# Copyright (c) 2013 Shotgun Software Inc.
+# 
+# CONFIDENTIAL AND PROPRIETARY
+# 
+# This work is provided "AS IS" and subject to the Shotgun Pipeline Toolkit 
+# Source Code License included in this distribution package. See LICENSE.
+# By accessing, using, copying or modifying this work you indicate your 
+# agreement to the Shotgun Pipeline Toolkit Source Code License. All rights 
+# not expressly granted therein are reserved by Shotgun Software Inc.
+
+# Metadata defining the behaviour and requirements for this app
+
+
+# expected fields in the configuration file for this app
+configuration:
+
+    hook_scan_scene:
+        type: hook
+        description: Scan the scene for input files. Returns A list of nodes and file names.
+                     Each item in the list returned should be a
+                     dictionary containing a node, type and a path key. The node key should be a
+                     maya node name, the type key is a reference type and the path key is a full
+                     path to the file currently being referenced.
+        parameters: []
+        default_value: maya_breakdown_scan_scene
+
+    hook_multi_update:
+        type: hook
+        description: Update a collection of nodes to another version. The data parameter is a list
+                     of dictionaries, every dictionary contains the three keys node_name, node_type
+                     and path. The node_name and node_type are simply the same data that the 
+                     scene scan hook returned, and the path value is the new path to load.                     
+        parameters: [data]
+        default_value: maya_breakdown_update
+
+# the Shotgun fields that this app needs in order to operate correctly
+requires_shotgun_fields:
+
+# More verbose description of this item 
+display_name: "Scene Breakdown"
+description: "Tools to see what in the scene is out of date."
+
+# Required minimum versions for this item to run
+requires_shotgun_version:
+requires_core_version: "v0.14.37"
+requires_engine_version: "v0.2.0"
+
+# the engines that this app can operate in:
+supported_engines: [tk-maya]
+
+
+# the frameworks required to run this app
+frameworks:
+    - {"name": "tk-framework-widget", "version": "v0.1.18"}
+    - {"name": "tk-framework-shotgunutils", "version": "v2.x.x"}    
+    

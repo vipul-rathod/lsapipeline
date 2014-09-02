@@ -1,0 +1,3379 @@
+#! C:/Program Files/Nuke7.0v6/Nuke7.0.exe -nx
+version 7.0 v6
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="1920" y="0" w="1920" h="1040" screen="0">
+        <splitter orientation="1">
+            <split size="970"/>
+            <splitter orientation="1">
+                <split size="40"/>
+                <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                    <page id="Toolbar.1"/>
+                </dock>
+                <split size="926"/>
+                <splitter orientation="2">
+                    <split size="979"/>
+                    <dock id="" activePageId="Viewer.1">
+                        <page id="Viewer.1"/>
+                    </dock>
+                </splitter>
+            </splitter>
+            <split size="930"/>
+            <dock id="" activePageId="DAG.1">
+                <page id="DAG.1"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ name K:/003_Comp/Episodes/ep106/BBB_BaseScript.nk
+ frame 93
+ last_frame 150
+ lock_range true
+ fps 25
+ format "1920 1080 0 0 1920 1080 1 HD"
+ proxy true
+ proxy_type scale
+ proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode3
+ tile_color 0x337c9bff
+ gl_color 0xffca54ff
+ label NIGHT
+ note_font "Verdana Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic"
+ note_font_color 0x62b8bcff
+ xpos -14767
+ ypos -1201
+ bdwidth 2134
+ bdheight 3410
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode1
+ tile_color 0x337c9bff
+ gl_color 0xffca54ff
+ label NIGHT
+ note_font "Verdana Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic Bold Italic"
+ note_font_color 0x62b8bcff
+ xpos -12517
+ ypos -1201
+ bdwidth 2134
+ bdheight 3410
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode11
+ tile_color 0xb54cb3ff
+ xpos -11962
+ ypos 110
+ bdwidth 824
+ bdheight 212
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode13
+ tile_color 0x2b882fff
+ xpos -11962
+ ypos -843
+ bdwidth 825
+ bdheight 929
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode14
+ tile_color 0x7fbadbff
+ xpos -12510
+ ypos 650
+ bdwidth 1220
+ bdheight 499
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode12
+ tile_color 0x8c4c2cff
+ xpos -11957
+ ypos 348
+ bdwidth 814
+ bdheight 204
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode7
+ tile_color 0x7fbadbff
+ xpos -14719
+ ypos 592
+ bdwidth 1238
+ bdheight 579
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode9
+ tile_color 0xb58282ff
+ xpos -10909
+ ypos 681
+ bdwidth 419
+ bdheight 617
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode18
+ tile_color 0xff00ff
+ xpos -13676
+ ypos 1502
+ bdwidth 452
+ bdheight 596
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode2
+ tile_color 0x6800ffff
+ xpos -10989
+ ypos 1503
+ bdwidth 378
+ bdheight 594
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode5
+ tile_color 0x8c4c2cff
+ xpos -14174
+ ypos 367
+ bdwidth 848
+ bdheight 201
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode15
+ tile_color 0x595188ff
+ xpos -14640
+ ypos 1260
+ bdwidth 880
+ bdheight 468
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode6
+ tile_color 0x2b882fff
+ xpos -14162
+ ypos -833
+ bdwidth 825
+ bdheight 929
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode16
+ tile_color 0xb58282ff
+ xpos -13232
+ ypos 699
+ bdwidth 419
+ bdheight 617
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode4
+ tile_color 0xb54cb3ff
+ xpos -14162
+ ypos 128
+ bdwidth 824
+ bdheight 212
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode10
+ tile_color 0xff00ff
+ xpos -11469
+ ypos 1660
+ bdwidth 437
+ bdheight 531
+}
+StickyNote {
+ inputs 0
+ name StickyNote13
+ label morning
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 10
+ xpos -14440
+ ypos 1359
+}
+StickyNote {
+ inputs 0
+ name StickyNote15
+ label dawn
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 10
+ xpos -14640
+ ypos 1359
+}
+StickyNote {
+ inputs 0
+ name StickyNote16
+ label sunrise
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 10
+ xpos -14540
+ ypos 1359
+}
+StickyNote {
+ inputs 0
+ name StickyNote19
+ label " afternoon late "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 10
+ xpos -14147
+ ypos 1359
+}
+StickyNote {
+ inputs 0
+ name StickyNote18
+ label " dusk"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 10
+ xpos -13940
+ ypos 1359
+}
+StickyNote {
+ inputs 0
+ name StickyNote17
+ label " sunset"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 10
+ xpos -14040
+ ypos 1359
+}
+StickyNote {
+ inputs 0
+ name StickyNote14
+ label midday
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 10
+ xpos -14340
+ ypos 1359
+}
+StickyNote {
+ inputs 0
+ name StickyNote10
+ label "rim and \n edge highlight "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -14401
+ ypos 205
+}
+StickyNote {
+ inputs 0
+ name StickyNote7
+ label " afternoon"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 10
+ xpos -14240
+ ypos 1359
+}
+StickyNote {
+ inputs 0
+ name StickyNote32
+ label " basic passes "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -12189
+ ypos -358
+}
+StickyNote {
+ inputs 0
+ name StickyNote33
+ label "rim and \n edge highlight "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -12201
+ ypos 187
+}
+StickyNote {
+ inputs 0
+ name StickyNote38
+ label underside
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -12515
+ ypos 614
+}
+StickyNote {
+ inputs 0
+ name StickyNote39
+ label key
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -12290
+ ypos 614
+}
+StickyNote {
+ inputs 0
+ name StickyNote41
+ label dof
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -11191
+ ypos 1712
+}
+StickyNote {
+ inputs 0
+ name StickyNote42
+ label "  Night  "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 100
+ xpos -11802
+ ypos -1389
+}
+StickyNote {
+ inputs 0
+ name StickyNote34
+ label "colour\n corrections  "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -12185
+ ypos 403
+}
+StickyNote {
+ inputs 0
+ name StickyNote12
+ label "colour\n corrections  "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -14385
+ ypos 403
+}
+StickyNote {
+ inputs 0
+ name StickyNote8
+ label dof
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -13390
+ ypos 1640
+}
+StickyNote {
+ inputs 0
+ name StickyNote2
+ label "  distance "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -13090
+ ypos 704
+}
+StickyNote {
+ inputs 0
+ name StickyNote23
+ label " cloud\n distance "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -13763
+ ypos 673
+}
+StickyNote {
+ inputs 0
+ name StickyNote22
+ label "  clouds  "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -11859
+ ypos 650
+}
+StickyNote {
+ inputs 0
+ name StickyNote24
+ label " cloud\n distance "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -11563
+ ypos 655
+}
+StickyNote {
+ inputs 0
+ name StickyNote5
+ label "  clouds  "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -14159
+ ypos 578
+}
+StickyNote {
+ inputs 0
+ name StickyNote40
+ label "star field"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -10859
+ ypos 1460
+}
+StickyNote {
+ inputs 0
+ name StickyNote3
+ label "  Day  "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 100
+ xpos -13958
+ ypos -1385
+}
+Dot {
+ inputs 0
+ name Dot7
+ label "TIME CONTROL"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 50
+ xpos -14356
+ ypos -1050
+ hide_input true
+}
+StickyNote {
+ inputs 0
+ name StickyNote31
+ label "chromatic\n abberation "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 15
+ xpos -11312
+ ypos 1816
+}
+StickyNote {
+ inputs 0
+ name StickyNote1
+ label "post effects"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -13525
+ ypos 1496
+}
+StickyNote {
+ inputs 0
+ name StickyNote4
+ label underside
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 15
+ xpos -14841
+ ypos 690
+}
+StickyNote {
+ inputs 0
+ name StickyNote6
+ label " skydome "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -14266
+ ypos 1244
+}
+StickyNote {
+ inputs 0
+ name StickyNote20
+ label "post effects"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -11325
+ ypos 1568
+}
+Camera2 {
+ inputs 0
+ rot_order XYZ
+ translate {{curve x1 -118.8301843 -118.7148415 -118.379669 -117.8409503 -117.1149694 -116.2180096 -115.1663551 -113.9762884 -112.6640949 -111.2460576 -109.7384589 -108.1575846 -106.5197164 -104.8411412 -103.1381382 -101.4269933 -99.72399268 -98.04541516 -96.4075469 -94.82667382 -93.31907508 -91.9010367 -90.58884419 -89.39877749 -88.34712365 -87.45016219 -86.72418194 -86.18546372 -85.85029053 -85.73494796} {curve x1 0.6927359892 0.7001291263 0.7216127104 0.7561430121 0.8026762726 0.8601687884 0.9275767818 1.003856593 1.087964375 1.178856445 1.275489136 1.376818573 1.481801165 1.589392945 1.698550485 1.808229894 1.917387279 2.024979214 2.129961804 2.231291168 2.327923861 2.418815995 2.502923717 2.57920353 2.646611481 2.7041041 2.750637322 2.785167593 2.806651219 2.814044342} {curve x1 319.7918319 319.7814275 319.7511936 319.7025991 319.6371127 319.5562034 319.46134 319.3539913 319.2356262 319.1077136 318.9717223 318.8291212 318.6813789 318.5299648 318.3763472 318.2219952 318.0683778 317.9169634 317.7692212 317.6266202 317.4906288 317.3627162 317.2443512 317.1370025 317.0421391 316.9612297 316.8957434 316.8471488 316.8169149 316.8065105}}
+ rotate {{curve x1 5.337089326 5.328724899 5.304418861 5.265352063 5.212705391 5.147659667 5.071395797 4.985094555 4.889936923 4.787103704 4.677775676 4.563133856 4.444358941 4.322632049 4.199133692 4.075044904 3.951546724 3.829819657 3.711044743 3.596403006 3.487074976 3.384241684 3.289084122 3.202782877 3.126519055 3.061473214 3.008826585 2.969759823 2.945453737 2.937089326} {curve x1 22.96256454 22.96674675 22.97889977 22.99843317 23.02475651 23.05727937 23.0954113 23.13856193 23.18614074 23.23755735 23.29222136 23.34954227 23.40892973 23.46979318 23.53154236 23.59358675 23.65533584 23.71619937 23.77558683 23.8329077 23.88757171 23.93898836 23.98656714 24.02971776 24.06784968 24.1003726 24.12669591 24.14622929 24.15838233 24.16256454} {curve x1 0 0 -2.159180487e-016 0 0 0 0 0 0 0 0 0 2.166135393e-016 2.167133239e-016 0 0 -1.085097994e-016 0 0 -1.086578326e-016 0 0 0 0 -1.088559239e-016 0 0 0 -1.089329388e-016 0}}
+ focal {{curve x1 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35}}
+ haperture {{curve x1 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746 35.99992746}}
+ vaperture {{curve x1 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164 23.99995164}}
+ name camera1
+ xpos -10680
+ ypos 1986
+}
+Read {
+ inputs 0
+ file I:/bubblebathbay/nuke/starField.tga
+ format "4096 2048 0 0 4096 2048 1 "
+ origset true
+ name Read1
+ xpos -10840
+ ypos 1527
+}
+Saturation {
+ saturation 0
+ name Saturation1
+ xpos -10840
+ ypos 1647
+}
+set N2893c620 [stack 0]
+Grade {
+ white 0.14
+ name softStars
+ xpos -10840
+ ypos 1701
+}
+push $N2893c620
+Grade {
+ black -0.64
+ white 3
+ multiply 0.3
+ name brightStars
+ xpos -10940
+ ypos 1647
+}
+Glow2 {
+ size 50
+ name Glow1
+ xpos -10940
+ ypos 1755
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge3
+ xpos -10840
+ ypos 1755
+}
+Shuffle {
+ alpha white
+ name Shuffle4
+ xpos -10840
+ ypos 1809
+}
+Cylinder {
+ cast_shadow false
+ receive_shadow false
+ rows 6
+ columns 60
+ radius 240
+ height 300
+ u_extent 180
+ translate {-120 10 300}
+ name Cylinder3
+ xpos -10840
+ ypos 1845
+}
+Scene {
+ name BBBWestPointSRF.v018.ma1
+ xpos -10830
+ ypos 1896
+}
+push 0
+ScanlineRender {
+ inputs 3
+ name render_camera1
+ xpos -10840
+ ypos 2007
+}
+Read {
+ inputs 0
+ format "1920 1080 0 0 1920 1080 1 HD"
+ origset true
+ name Read7
+ xpos -11940
+ ypos -921
+}
+set N2893e510 [stack 0]
+Dot {
+ name Dot31
+ xpos -11106
+ ypos -888
+}
+Dot {
+ name Dot32
+ xpos -11106
+ ypos 732
+}
+set N2893ebf0 [stack 0]
+add_layer {depth_norm depth_norm.red depth_norm.green depth_norm.blue}
+Shuffle {
+ in depth_norm
+ blue red
+ alpha red
+ name DEPTH_ENV1
+ xpos -11040
+ ypos 729
+}
+Grade {
+ channels {-rgba.red rgba.green -rgba.blue}
+ gamma 0.45
+ name Grade53
+ xpos -10840
+ ypos 723
+}
+Saturation {
+ saturation 0
+ name Saturation9
+ xpos -10840
+ ypos 783
+}
+Dot {
+ name Dot33
+ xpos -10806
+ ypos 912
+}
+set N2893f9b0 [stack 0]
+Grade {
+ channels rgba
+ blackpoint 0.007
+ whitepoint 0.52
+ white {0.3191999197 0.2599999905 1 1}
+ name Grade_night2
+ xpos -10640
+ ypos 909
+}
+Grade {
+ channels rgba
+ whitepoint 0.2
+ name Grade54
+ xpos -10640
+ ypos 1269
+}
+push $N2893f9b0
+Grade {
+ blackpoint 0.03
+ whitepoint 0.45
+ white {0.5491811037 0.5304650664 0.9047851563 0}
+ multiply 0.8
+ add -0.035
+ name Grade_night3
+ xpos -10840
+ ypos 999
+}
+Saturation {
+ saturation 2
+ name Saturation10
+ xpos -10840
+ ypos 1233
+}
+Read {
+ inputs 0
+ format "1920 1080 0 0 1920 1080 1 HD"
+ origset true
+ version 1
+ name Read17
+ xpos -12040
+ ypos -921
+}
+Dot {
+ name Dot11
+ xpos -12006
+ ypos 624
+}
+Dot {
+ name Dot13
+ xpos -11806
+ ypos 624
+}
+Dot {
+ name Dot14
+ xpos -11806
+ ypos 768
+}
+set N28a937f0 [stack 0]
+Dot {
+ name Dot38
+ xpos -11806
+ ypos 1092
+}
+set N28a93b60 [stack 0]
+push $N28a937f0
+add_layer {sss_back sss_back.red sss_back.green sss_back.blue}
+Shuffle {
+ in sss_back
+ name Shuffle6
+ xpos -11940
+ ypos 945
+}
+Grade {
+ name Grade58
+ xpos -12190
+ ypos 945
+}
+push $N28a937f0
+add_layer {point_world point_world.NX point_world.NY point_world.NZ}
+Shuffle {
+ in point_world
+ name Shuffle13
+ xpos -11940
+ ypos 801
+}
+push $N28a937f0
+add_layer {normal_world_norm normal_world_norm.NX normal_world_norm.NY normal_world_norm.NZ}
+Shuffle {
+ in normal_world_norm
+ name Shuffle21
+ xpos -11940
+ ypos 765
+}
+push $N28a937f0
+add_layer {colour colour.red colour.green colour.blue}
+Shuffle {
+ in colour
+ name Shuffle22
+ xpos -11940
+ ypos 711
+}
+add_layer {normal normal.x normal.y normal.z}
+Copy {
+ inputs 2
+ from0 rgba.alpha
+ to0 rgba.alpha
+ from1 rgba.red
+ to1 normal.x
+ from2 rgba.green
+ to2 normal.y
+ from3 rgba.blue
+ to3 normal.z
+ name Copy3
+ xpos -12090
+ ypos 687
+}
+add_layer {pos pos.x pos.y pos.z}
+Copy {
+ inputs 2
+ from0 rgba.alpha
+ to0 rgba.alpha
+ from1 rgba.red
+ to1 pos.x
+ from2 rgba.green
+ to2 pos.y
+ from3 rgba.blue
+ to3 pos.z
+ name Copy4
+ xpos -12090
+ ypos 777
+}
+set N28a95370 [stack 0]
+Dot {
+ name Dot39
+ xpos -12356
+ ypos 822
+}
+Light2 {
+ inputs 0
+ light_type directional
+ intensity 10
+ selectable false
+ rotate {30 120 0}
+ depthmap_slope_bias 0.01
+ name Light_underside1
+ xpos -12480
+ ypos 672
+}
+set N28a95a50 [stack 0]
+push $N28a95a50
+Scene {
+ name Scene3
+ xpos -12480
+ ypos 744
+}
+push $N28a95370
+ReLight {
+ inputs 4
+ normal normal
+ position pos
+ name ReLight2
+ xpos -12490
+ ypos 855
+}
+Grade {
+ white {-0.05999994278 0.6183998585 1 1}
+ name cloud_night2
+ xpos -12490
+ ypos 945
+}
+Blur {
+ size 10
+ name Blur8
+ xpos -12490
+ ypos 1047
+}
+push $N28a95370
+Dot {
+ name Dot40
+ xpos -12156
+ ypos 858
+}
+Light2 {
+ inputs 0
+ light_type directional
+ intensity 10
+ selectable false
+ rotate {-110 70 0}
+ depthmap_slope_bias 0.01
+ name Light_night
+ xpos -12280
+ ypos 672
+}
+set N28ba1410 [stack 0]
+push $N28ba1410
+Scene {
+ name Scene4
+ xpos -12280
+ ypos 762
+}
+push $N28a95370
+ReLight {
+ inputs 4
+ normal normal
+ position pos
+ name ReLight4
+ xpos -12290
+ ypos 855
+}
+Grade {
+ white {0.5600000024 1 1 1}
+ multiply 3
+ name Grade59
+ xpos -12290
+ ypos 945
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge41
+ xpos -12290
+ ypos 1053
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge42
+ xpos -12190
+ ypos 1053
+}
+ColorCorrect {
+ gain 0.3
+ name ColorCorrect8
+ xpos -11890
+ ypos 1053
+}
+push $N28a937f0
+Shuffle {
+ in depth_norm
+ in2 alpha
+ green red
+ blue red
+ alpha red
+ name Shuffle23
+ xpos -11690
+ ypos 729
+}
+Grade {
+ channels rgba
+ white 10
+ multiply 0.045
+ gamma 2
+ name Grade60
+ xpos -11490
+ ypos 729
+}
+set N28ba2f90 [stack 0]
+Invert {
+ name Invert2
+ xpos -11390
+ ypos 723
+}
+push $N28ba2f90
+push $N28a937f0
+add_layer {beauty_clouds beauty_clouds.red beauty_clouds.green beauty_clouds.blue}
+Shuffle {
+ in beauty_clouds
+ in2 alpha
+ green red
+ blue red
+ alpha red
+ name Shuffle24
+ xpos -11690
+ ypos 801
+}
+ColorCorrect {
+ inputs 1+1
+ channels rgba
+ contrast 0.98
+ gamma 0.88
+ gain 0
+ name ColorCorrect16
+ xpos -11490
+ ypos 801
+}
+Blur {
+ inputs 1+1
+ size 10
+ name Blur9
+ xpos -11390
+ ypos 795
+}
+ColorCorrect {
+ contrast 1.5
+ gain {0.01536643505 0.04929086566 0.5 0}
+ name ColorCorrect_night1
+ xpos -11390
+ ypos 909
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge43
+ xpos -11390
+ ypos 1053
+}
+ShuffleCopy {
+ inputs 2
+ name ShuffleCopy2
+ xpos -11390
+ ypos 1089
+}
+Blur {
+ channels rgba
+ size 5
+ name Blur10
+ xpos -11390
+ ypos 1107
+}
+SoftClip {
+ conversion "logarithmic compress"
+ softclip_min 0
+ name SoftClip4
+ xpos -11390
+ ypos 1125
+}
+push $N28a93b60
+add_layer {environment environment.red environment.green environment.blue}
+Shuffle {
+ in environment
+ alpha black
+ name ENVIRONMENT1
+ xpos -11840
+ ypos 1179
+}
+ColorCorrect {
+ saturation 0.3
+ contrast 1.2
+ gamma 0.2
+ gain {1 0.3999999762 0.507999897 1}
+ name ColorCorrect17
+ xpos -11690
+ ypos 1179
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge44
+ xpos -11390
+ ypos 1179
+}
+Constant {
+ inputs 0
+ channels rgb
+ color 10
+ format "1440 810 0 0 1440 810 0.999563 "
+ name Constant4
+ xpos -11140
+ ypos 849
+}
+push $N2893ebf0
+push $N2893ebf0
+add_layer {depth_norm_env depth_norm_env.red depth_norm_env.green depth_norm_env.blue}
+ShuffleCopy {
+ inputs 2
+ in depth_norm_env
+ in2 alpha
+ red red
+ green red
+ blue red
+ alpha red2
+ name ShuffleCopy5
+ xpos -11140
+ ypos 765
+}
+Merge2 {
+ inputs 2
+ operation under
+ name Merge45
+ xpos -11140
+ ypos 801
+}
+push $N2893ebf0
+push $N2893e510
+Shuffle {
+ in colour
+ in2 alpha
+ alpha black
+ name COLOR1
+ xpos -11940
+ ypos -693
+}
+set N28cd48f0 [stack 0]
+Dot {
+ name Dot45
+ xpos -11906
+ ypos -564
+}
+set N28cd4c60 [stack 0]
+add_layer {diffuse diffuse.red diffuse.green diffuse.blue}
+Shuffle {
+ in diffuse
+ alpha black
+ name DIFFUSE1
+ xpos -11940
+ ypos -459
+}
+set N28cd4fd0 [stack 0]
+add_layer {indirect indirect.red indirect.green indirect.blue}
+Shuffle {
+ in indirect
+ alpha black
+ name INDIRECT1
+ xpos -11940
+ ypos -369
+}
+set N28cd5340 [stack 0]
+add_layer {ao ao.red ao.green ao.blue}
+Shuffle {
+ in ao
+ in2 rgba
+ alpha alpha2
+ name AO1
+ xpos -11940
+ ypos -333
+}
+set N28cd56b0 [stack 0]
+add_layer {specular specular.red specular.green specular.blue}
+Shuffle {
+ in specular
+ name SPECULAR1
+ xpos -11940
+ ypos -297
+}
+set N28cd5a20 [stack 0]
+add_layer {refraction refraction.red refraction.green refraction.blue}
+Shuffle {
+ in refraction
+ name REFRACTION1
+ xpos -11940
+ ypos -189
+}
+set N28cd5d90 [stack 0]
+add_layer {matte_water matte_water.alpha}
+Shuffle {
+ in matte_water
+ name MATTE_WATER_2
+ xpos -11940
+ ypos -153
+}
+set N28db6eb0 [stack 0]
+add_layer {reflection reflection.red reflection.green reflection.blue}
+Shuffle {
+ in reflection
+ name REFLECTION1
+ xpos -11940
+ ypos -99
+}
+set N28db7220 [stack 0]
+add_layer {incandescence incandescence.red incandescence.green incandescence.blue}
+Shuffle {
+ in incandescence
+ green red
+ blue red
+ alpha red
+ name INCANDESCENCE1
+ xpos -11940
+ ypos -45
+}
+set N28db7590 [stack 0]
+Shuffle {
+ in diffuse
+ alpha black
+ name DIFFUSE_1
+ xpos -11940
+ ypos 153
+}
+set N28db7900 [stack 0]
+add_layer {facing_ratio facing_ratio.alpha}
+Shuffle {
+ in facing_ratio
+ name FACING_RATIO1
+ xpos -11940
+ ypos 207
+}
+set N28db7c70 [stack 0]
+Shuffle {
+ in matte_water
+ name MATTE_WATER_3
+ xpos -11940
+ ypos 261
+}
+set N28db7fe0 [stack 0]
+add_layer {matte_ground matte_ground.alpha}
+Shuffle {
+ in matte_ground
+ green red
+ blue red
+ alpha red
+ name MATTE_GROUND1
+ xpos -11940
+ ypos 387
+}
+set N28db8350 [stack 0]
+add_layer {matte_houses matte_houses.alpha}
+Shuffle {
+ in matte_houses
+ green red
+ blue red
+ alpha red
+ name MATTE_HOUSES1
+ xpos -11940
+ ypos 423
+}
+set N28db86c0 [stack 0]
+add_layer {matte_shrubs matte_shrubs.alpha}
+Shuffle {
+ in matte_shrubs
+ green red
+ blue red
+ alpha red
+ name MATTE_SHRUBS1
+ xpos -11940
+ ypos 477
+}
+set N28db8a30 [stack 0]
+Shuffle {
+ in matte_water
+ green red
+ blue red
+ alpha red
+ name MATTE_WATER1
+ xpos -11940
+ ypos 513
+}
+push $N28db8a30
+push $N28db86c0
+push $N28db8350
+push $N28db7fe0
+Invert {
+ name Invert6
+ xpos -11590
+ ypos 255
+}
+push $N28db7c70
+Invert {
+ name Invert7
+ xpos -11840
+ ypos 201
+}
+Grade {
+ gamma 0.2
+ name Grade71
+ xpos -11690
+ ypos 207
+}
+Merge2 {
+ inputs 2
+ operation mask
+ name Merge46
+ xpos -11590
+ ypos 207
+}
+push $N28db7900
+Merge2 {
+ inputs 2
+ operation multiply
+ name Merge47
+ xpos -11590
+ ypos 153
+}
+set N28db9ed0 [stack 0]
+Saturation {
+ saturation 0
+ name Saturation12
+ xpos -11490
+ ypos 207
+}
+Grade {
+ blackpoint 0.028
+ whitepoint 0.36
+ name Grade72
+ xpos -11390
+ ypos 207
+}
+push $N28db9ed0
+Read {
+ inputs 0
+ format "1920 1080 0 0 1920 1080 1 HD"
+ first 80
+ last 150
+ origfirst 80
+ origlast 150
+ origset true
+ name Read3
+ xpos -10717
+ ypos 25
+}
+Grade {
+ whitepoint {0.25 0.1866787374 0.149342984 1.399999976}
+ multiply 0.6
+ gamma {1 1.299999952 1.179999948 1}
+ name Grade3
+ xpos -10827
+ ypos 49
+}
+ColorCorrect {
+ midtones.contrast 0.4
+ name ColorCorrect1
+ xpos -10937
+ ypos 49
+}
+Glow2 {
+ tolerance 0.6
+ size 250
+ name Glow6
+ xpos -11047
+ ypos 49
+}
+push $N28db7590
+Glow2 {
+ size 10
+ name Glow8
+ xpos -11490
+ ypos -45
+}
+push $N28db6eb0
+Invert {
+ name Invert8
+ xpos -11590
+ ypos -159
+}
+push $N28db6eb0
+push $N28db7220
+DegrainSimple {
+ inputs 1+1
+ rVal 50
+ gVal 50
+ bVal 50
+ name DegrainSimple1
+ xpos -11840
+ ypos -105
+}
+Dot {
+ name Dot46
+ xpos -11356
+ ypos -96
+}
+Grade {
+ inputs 1+1
+ name Grade75
+ xpos -11390
+ ypos -153
+}
+push $N28cd5d90
+Grade {
+ multiply 0.5
+ gamma 0.8
+ name Grade76
+ xpos -11590
+ ypos -189
+}
+push $N28cd5a20
+Grade {
+ multiply 0.75
+ name grade_normal1
+ xpos -11790
+ ypos -297
+}
+push $N28cd56b0
+DegrainSimple {
+ rVal 13
+ gVal 13
+ bVal 13
+ name DegrainSimple2
+ xpos -11640
+ ypos -339
+}
+push $N28cd5340
+push $N28cd4c60
+Shuffle {
+ in matte_water
+ name MATTE_WATER_4
+ xpos -11640
+ ypos -567
+}
+push $N28cd4fd0
+Grade {
+ white {0.3199999928 0.6940001249 1 1}
+ name night1
+ xpos -11840
+ ypos -459
+}
+Grade {
+ inputs 1+1
+ white 0.25
+ name NIGHT_DARK_WATER1
+ xpos -11640
+ ypos -459
+}
+push $N28cd48f0
+Grade {
+ white 0.6
+ gamma 0.45
+ name Grade_night_col2
+ xpos -11590
+ ypos -693
+}
+Dot {
+ name Dot47
+ xpos -11256
+ ypos -690
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge48
+ xpos -11290
+ ypos -459
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge49
+ xpos -11290
+ ypos -369
+}
+Merge2 {
+ inputs 2
+ operation multiply
+ mix 0.75
+ name Merge51
+ xpos -11290
+ ypos -333
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge53
+ xpos -11290
+ ypos -297
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge54
+ xpos -11290
+ ypos -189
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge55
+ xpos -11290
+ ypos -153
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge57
+ xpos -11290
+ ypos -45
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge5
+ xpos -11290
+ ypos 49
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge58
+ xpos -11290
+ ypos 153
+}
+Merge2 {
+ inputs 2
+ operation plus
+ mix 0.5
+ name Merge59
+ xpos -11290
+ ypos 207
+}
+ColorCorrect {
+ inputs 1+1
+ gain {0.7506498694 0.9773908854 1 1}
+ name ColorCorrect36
+ xpos -11290
+ ypos 387
+}
+ColorCorrect {
+ inputs 1+1
+ saturation 1.1
+ contrast 0.95
+ gamma 0.95
+ midtones.saturation 1.3
+ name ColorCorrect37
+ xpos -11290
+ ypos 423
+}
+ColorCorrect {
+ inputs 1+1
+ saturation 1.1
+ name ColorCorrect38
+ xpos -11290
+ ypos 477
+}
+ColorCorrect {
+ inputs 1+1
+ name ColorCorrect39
+ xpos -11290
+ ypos 513
+}
+ShuffleCopy {
+ inputs 2
+ name SH_ALPHA1
+ xpos -11290
+ ypos 729
+}
+ShuffleCopy {
+ inputs 2
+ red red
+ green green
+ blue blue
+ out depth
+ name SH_DOF1
+ xpos -11290
+ ypos 801
+}
+set N28ff48c0 [stack 0]
+add_layer {matte_boats matte_boats.alpha}
+Shuffle {
+ in matte_boats
+ name in1
+ xpos -11140
+ ypos 999
+}
+set N28ff4c30 [stack 0]
+Invert {
+ name Invert14
+ xpos -11140
+ ypos 1065
+}
+push $N28ff4c30
+push $N28ff48c0
+ColorCorrect {
+ inputs 1+1
+ gain 1.5
+ name ColorCorrect40
+ xpos -11290
+ ypos 999
+}
+ColorCorrect {
+ inputs 1+1
+ gamma 0.8
+ name ColorCorrect41
+ xpos -11290
+ ypos 1071
+}
+Merge2 {
+ inputs 2
+ operation under
+ name Merge71
+ xpos -11290
+ ypos 1179
+}
+Merge2 {
+ inputs 2
+ name Merge72
+ xpos -11290
+ ypos 1233
+}
+ColorCorrect {
+ inputs 1+1
+ gain 0.2
+ name ColorCorrect42
+ xpos -11290
+ ypos 1269
+}
+ZDefocus2 {
+ serializeKnob ""
+ z_channel depth_norm.red
+ math depth
+ center 0.01621246338
+ focal_point {890 386}
+ dof 1.299999952
+ blur_dof false
+ size 1
+ max_size 5
+ filter_type bladed
+ filter_channel none
+ blades 10
+ name ZDefocus2
+ selected true
+ xpos -11290
+ ypos 1689
+}
+add_layer {mv2DNormRemap mv2DNormRemap.MX mv2DNormRemap.MY mv2DNormRemap.MZ}
+VectorBlur {
+ channels rgba
+ uv mv2DNormRemap
+ constant {-0.49606 -0.49606}
+ scale 450
+ method forward
+ alpha rgba.alpha
+ name VectorBlur1
+ xpos -11291
+ ypos 1731
+ disable true
+}
+Glow2 {
+ tint 0.4
+ tolerance 0.5
+ size 50
+ mix 0.5
+ name Glow10
+ xpos -11291
+ ypos 1755
+}
+set N28ff6440 [stack 0]
+Dot {
+ name Dot48
+ xpos -11407
+ ypos 1758
+}
+TransformMasked {
+ channels {rgba.red -rgba.green -rgba.blue}
+ scale 0.999
+ center {720 405}
+ name Transform5
+ xpos -11441
+ ypos 1821
+}
+Dot {
+ name Dot49
+ xpos -11407
+ ypos 1920
+}
+push $N28ff6440
+Dot {
+ name Dot50
+ xpos -11157
+ ypos 1758
+}
+TransformMasked {
+ channels {-rgba.red -rgba.green rgba.blue}
+ scale 1.001
+ center {720 405}
+ name Transform6
+ xpos -11191
+ ypos 1821
+}
+Dot {
+ name Dot51
+ xpos -11157
+ ypos 1920
+}
+Merge2 {
+ inputs 2
+ operation max
+ name Merge77
+ xpos -11291
+ ypos 1917
+}
+Reformat {
+ name Reformat3
+ xpos -11291
+ ypos 1953
+}
+Merge2 {
+ inputs 2
+ operation under
+ name Merge8
+ xpos -11291
+ ypos 2007
+}
+SoftClip {
+ conversion "logarithmic compress"
+ softclip_min 0
+ softclip_max 3
+ name SoftClip1
+ xpos -11291
+ ypos 2097
+}
+Write {
+ file I:/bubblebathbay/_renders/TOD_Night8a.png
+ colorspace sRGB
+ file_type png
+ checkHashOnRead false
+ version 152
+ name Write4
+ xpos -11291
+ ypos 2139
+}
+StickyNote {
+ inputs 0
+ name StickyNote11
+ label " basic passes "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 25
+ xpos -14398
+ ypos -340
+}
+NoOp {
+ inputs 0
+ name MASTER
+ label "\n"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 30
+ note_font_color 0xffffffff
+ xpos -14140
+ ypos -993
+ hide_input true
+ addUserKnob {20 User}
+ addUserKnob {4 timeOfDay M {Dawn Sunrise Morning Midday Afternoon "Afternoon Late" Sunset Dusk}}
+ timeOfDay Afternoon
+}
+StickyNote {
+ inputs 0
+ name StickyNote9
+ label "chromatic\n abberation "
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 15
+ xpos -13500
+ ypos 1726
+}
+Read {
+ inputs 0
+ format "1920 1080 0 0 1920 1080 1 HD"
+ last 150
+ origlast 150
+ origset true
+ version 7
+ name Read6
+ xpos -14140
+ ypos -926
+}
+set N19e45860 [stack 0]
+Dot {
+ name Dot16
+ xpos -13296
+ ypos -887
+}
+Dot {
+ name Dot17
+ xpos -13306
+ ypos 750
+}
+set N19e45f40 [stack 0]
+Shuffle {
+ in depth_norm
+ blue red
+ alpha red
+ name DEPTH_ENV
+ xpos -13196
+ ypos 747
+}
+Grade {
+ channels {-rgba.red rgba.green -rgba.blue}
+ gamma 0.45
+ name Grade57
+ xpos -13016
+ ypos 741
+}
+Saturation {
+ saturation 0
+ name Saturation6
+ xpos -13016
+ ypos 881
+}
+set N2915fa70 [stack 0]
+Grade {
+ blackpoint 0.03
+ whitepoint 0.45
+ white {0.4399999976 0.339327991 0.2463999987 0}
+ multiply 0.8
+ add -0.035
+ name Grade_dusk
+ xpos -13163
+ ypos 1017
+}
+push $N2915fa70
+Grade {
+ blackpoint 0.018
+ whitepoint 0.45
+ white {0.9047851563 0.6022250056 0.5066797137 0}
+ add -0.035
+ name Grade_sunset
+ xpos -13163
+ ypos 999
+}
+push $N2915fa70
+Grade {
+ blackpoint 0.022
+ whitepoint 0.43
+ white {0.9047851563 0.7165898681 0.5428711176 0}
+ name Grade_afternoon_late
+ xpos -13163
+ ypos 981
+}
+push $N2915fa70
+Grade {
+ blackpoint 0.022
+ whitepoint 0.43
+ white {0.5609667897 0.8428979516 0.9047851563 0}
+ name Grade_afternoon
+ xpos -13164
+ ypos 963
+}
+push $N2915fa70
+Grade {
+ blackpoint 0.022
+ whitepoint 0.43
+ white {0.6966845393 0.8860561252 0.9047851563 0}
+ multiply 1.5
+ name Grade_midday
+ xpos -13163
+ ypos 945
+}
+push $N2915fa70
+Grade {
+ blackpoint 0.022
+ whitepoint 0.43
+ white {0.8669651151 0.9047851563 0.5609667897 0}
+ name Grade_morning
+ xpos -13163
+ ypos 927
+}
+push $N2915fa70
+Grade {
+ blackpoint 0.022
+ whitepoint 0.43
+ white {0.9047851563 0.7717368007 0.5172532201 0}
+ multiply 1.5
+ name Grade_sunrise
+ xpos -13163
+ ypos 909
+}
+push $N2915fa70
+Grade {
+ blackpoint 0.018
+ whitepoint 0.45
+ white {0.9047851563 0.7118849158 0.6695410013 0}
+ add -0.035
+ name Grade_dawn
+ xpos -13163
+ ypos 889
+}
+Switch {
+ inputs 8
+ which {{MASTER.timeOfDay x1 0}}
+ name Switch5
+ xpos -13013
+ ypos 975
+ postage_stamp true
+ addUserKnob {20 User}
+}
+set C1ccfbe40 [stack 0]
+Saturation {
+ saturation 2
+ name Saturation7
+ xpos -13013
+ ypos 1251
+}
+Read {
+ inputs 0
+ format "1920 1080 0 0 1920 1080 1 HD"
+ last 150
+ origlast 150
+ origset true
+ version 11
+ name Read2
+ xpos -14240
+ ypos -925
+}
+Dot {
+ name Dot2
+ xpos -14206
+ ypos 570
+}
+Dot {
+ name Dot6
+ xpos -13956
+ ypos 570
+}
+Dot {
+ name Dot3
+ xpos -13956
+ ypos 786
+}
+set N29162720 [stack 0]
+Dot {
+ name Dot8
+ xpos -13956
+ ypos 930
+}
+set N29162a90 [stack 0]
+Dot {
+ name Dot12
+ xpos -13956
+ ypos 1110
+}
+set N29162e00 [stack 0]
+push $N29162a90
+Shuffle {
+ in sss_back
+ name Shuffle20
+ xpos -14090
+ ypos 927
+}
+Grade {
+ name Grade10
+ xpos -14090
+ ypos 1018
+}
+push $N29162720
+Shuffle {
+ in point_world
+ name Shuffle17
+ xpos -14140
+ ypos 819
+}
+push $N29162720
+Shuffle {
+ in normal_world_norm
+ name Shuffle18
+ xpos -14140
+ ypos 783
+}
+push $N29162720
+Shuffle {
+ in colour
+ name Shuffle19
+ xpos -14140
+ ypos 729
+}
+Copy {
+ inputs 2
+ from0 rgba.alpha
+ to0 rgba.alpha
+ from1 rgba.red
+ to1 normal.x
+ from2 rgba.green
+ to2 normal.y
+ from3 rgba.blue
+ to3 normal.z
+ name Copy1
+ xpos -14490
+ ypos 705
+}
+Copy {
+ inputs 2
+ from0 rgba.alpha
+ to0 rgba.alpha
+ from1 rgba.red
+ to1 pos.x
+ from2 rgba.green
+ to2 pos.y
+ from3 rgba.blue
+ to3 pos.z
+ name Copy2
+ xpos -14490
+ ypos 795
+}
+set N2923d9e0 [stack 0]
+Dot {
+ name Dot24
+ xpos -14556
+ ypos 876
+}
+Light2 {
+ inputs 0
+ light_type directional
+ intensity 10
+ selectable false
+ rotate {30 120 0}
+ depthmap_slope_bias 0.01
+ name Light_underside
+ xpos -14580
+ ypos 744
+}
+set N2923e0c0 [stack 0]
+Camera2 {
+ translate {0 0 9.489999771}
+ name Camera2
+ xpos -14680
+ ypos 744
+}
+push $N2923e0c0
+Scene {
+ name Scene2
+ xpos -14680
+ ypos 690
+}
+push $N2923d9e0
+ReLight {
+ inputs 4
+ normal normal
+ position pos
+ name ReLight3
+ xpos -14690
+ ypos 819
+}
+set N2923eb10 [stack 0]
+Grade {
+ white {1 0.09900003672 -0.05999994278 1}
+ multiply 1.5
+ name cloudUnder_dusk
+ xpos -14690
+ ypos 1035
+}
+push $N2923eb10
+Grade {
+ white {1 0.1260000467 -0.1499999762 1}
+ multiply 1.5
+ name cloudUnder_sunset
+ xpos -14690
+ ypos 1017
+}
+push $N2923eb10
+Grade {
+ white {-0.05999994278 0.6183998585 1 1}
+ name cloudUnder_afternoon_late
+ xpos -14690
+ ypos 999
+}
+push $N2923eb10
+Grade {
+ blackpoint -0.018
+ whitepoint 0.88
+ white {0.9399999976 0.978399992 1 1}
+ add 0.0005
+ name cloudUnder_afternoon
+ xpos -14690
+ ypos 982
+}
+push $N2923eb10
+Grade {
+ white {-0.05999994278 0.6183998585 1 1}
+ multiply 1.5
+ name cloudUnder_midday
+ xpos -14690
+ ypos 963
+}
+push $N2923eb10
+Grade {
+ white {1 -0.3299999237 -0.75 1}
+ multiply 1.5
+ name cloudUnder_morning
+ xpos -14690
+ ypos 945
+}
+push $N2923eb10
+Grade {
+ white {1 0.2262000442 -0.05999994278 1}
+ multiply 2.5
+ name cloudUnder_sunrise
+ xpos -14690
+ ypos 927
+}
+push $N2923eb10
+Grade {
+ white {1.5 0.206400007 0.02999997139 1}
+ multiply 4
+ name cloudUnder_dawn
+ xpos -14690
+ ypos 909
+}
+clone $C1ccfbe40 {
+ inputs 8
+ xpos -14590
+ ypos 963
+ selected false
+}
+Blur {
+ size 10
+ name Blur4
+ xpos -14590
+ ypos 1065
+}
+push $N2923d9e0
+Dot {
+ name Dot10
+ xpos -14506
+ ypos 912
+}
+Light2 {
+ inputs 0
+ light_type directional
+ intensity 10
+ selectable false
+ rotate {190 140 0}
+ depthmap_slope_bias 0.01
+ name Light_sunset
+ xpos -14380
+ ypos 636
+}
+Light2 {
+ light_type directional
+ intensity 10
+ selectable false
+ rotate {20 -40 0}
+ depthmap_slope_bias 0.01
+ name Light_dusk
+ xpos -14330
+ ypos 636
+}
+set N29386110 [stack 0]
+push $N29386110
+Light2 {
+ inputs 0
+ light_type directional
+ intensity 10
+ selectable false
+ rotate {230 140 0}
+ depthmap_slope_bias 0.01
+ name Light_afternoonlate
+ xpos -14430
+ ypos 636
+}
+Light2 {
+ inputs 0
+ light_type directional
+ intensity 10
+ selectable false
+ rotate {-80 -90 0}
+ depthmap_slope_bias 0.01
+ name Light_afternoon
+ xpos -14480
+ ypos 636
+}
+Light2 {
+ inputs 0
+ light_type directional
+ intensity 10
+ selectable false
+ rotate {-70 -130 0}
+ depthmap_slope_bias 0.01
+ name Light_midday
+ xpos -14530
+ ypos 636
+}
+Light2 {
+ inputs 0
+ light_type directional
+ intensity 10
+ selectable false
+ rotate {40 90 0}
+ depthmap_slope_bias 0.01
+ name Light_morning
+ xpos -14580
+ ypos 636
+}
+Light2 {
+ inputs 0
+ light_type directional
+ intensity 10
+ selectable false
+ rotate {20 100 0}
+ depthmap_slope_bias 0.01
+ name Light_sunrise
+ xpos -14630
+ ypos 636
+}
+Light2 {
+ inputs 0
+ light_type directional
+ intensity 10
+ selectable false
+ rotate {-20 120 0}
+ depthmap_slope_bias 0.01
+ name Light_dawn
+ note_font Helvetica
+ xpos -14680
+ ypos 636
+}
+clone $C1ccfbe40 {
+ inputs 8
+ xpos -14240
+ ypos 657
+ selected false
+}
+set N1ccfc8f0 [stack 0]
+Camera2 {
+ translate {0 0 9.489999771}
+ name Camera1
+ xpos -14230
+ ypos 798
+}
+push $N1ccfc8f0
+Scene {
+ name Scene1
+ xpos -14381
+ ypos 798
+}
+push $N2923d9e0
+ReLight {
+ inputs 4
+ normal normal
+ position pos
+ name ReLight1
+ xpos -14490
+ ypos 963
+}
+set N29388000 [stack 0]
+Grade {
+ white {1 -0.04399991035 -0.7999999523 1}
+ name clouds_dusk
+ xpos -14290
+ ypos 1017
+}
+push $N29388000
+Grade {
+ white {1 0.3119999766 -0.6000000238 1}
+ multiply 2
+ name clouds_sunset
+ xpos -14290
+ ypos 999
+}
+push $N29388000
+Grade {
+ blackpoint 0.038
+ whitepoint 0.94
+ white {1 0.7031999826 -0.05999994278 1}
+ name clouds_afternoon_late
+ xpos -14290
+ ypos 981
+}
+push $N29388000
+Grade {
+ blackpoint 0.038
+ whitepoint 0.94
+ white {1 0.7031999826 -0.05999994278 1}
+ name clouds_afternoon
+ xpos -14290
+ ypos 963
+}
+push $N29388000
+Grade {
+ white {0.8000000119 0.9279999733 1 1}
+ name clouds_midday
+ xpos -14290
+ ypos 945
+}
+push $N29388000
+Grade {
+ white {1.059999943 0.5501400232 -0.3179999292 1}
+ multiply 2
+ name clouds_morning
+ xpos -14290
+ ypos 927
+}
+push $N29388000
+Grade {
+ white {1 0.5442000031 -0.05999994278 1}
+ multiply 2
+ name clouds_sunrise
+ xpos -14290
+ ypos 909
+}
+push $N29388000
+Grade {
+ white {0.560000062 0.2710400224 -0.1120000407 0.5600000024}
+ multiply 8
+ gamma 0.76
+ name clouds_dawn
+ xpos -14290
+ ypos 891
+}
+clone $C1ccfbe40 {
+ inputs 8
+ xpos -14190
+ ypos 963
+ selected false
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge21
+ xpos -14190
+ ypos 1071
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge1
+ xpos -14090
+ ypos 1071
+}
+Glow2 {
+ tolerance 0.05
+ size 50
+ name Glow4
+ xpos -13890
+ ypos 1071
+}
+push $N29162720
+Shuffle {
+ in depth_norm
+ in2 alpha
+ green red
+ blue red
+ alpha red
+ name Shuffle80
+ xpos -13890
+ ypos 747
+}
+Grade {
+ channels rgba
+ white 10
+ multiply 0.045
+ gamma 2
+ name Grade16
+ xpos -13790
+ ypos 747
+}
+set N29546ef0 [stack 0]
+Invert {
+ name Invert20
+ xpos -13590
+ ypos 741
+}
+push $N29546ef0
+push $N29162720
+Shuffle {
+ in beauty_clouds
+ in2 alpha
+ green red
+ blue red
+ alpha red
+ name Shuffle82
+ xpos -13890
+ ypos 819
+}
+ColorCorrect {
+ inputs 1+1
+ channels rgba
+ contrast 0.98
+ gamma 0.88
+ gain 0
+ name ColorCorrect20
+ xpos -13790
+ ypos 819
+}
+Blur {
+ inputs 1+1
+ size 10
+ name Blur3
+ xpos -13590
+ ypos 813
+}
+set N29547cb0 [stack 0]
+ColorCorrect {
+ contrast 0.5
+ gain {0.5 0.1177887619 0.01536643505 0}
+ name ColorCorrect_dusk
+ xpos -13790
+ ypos 1017
+}
+push $N29547cb0
+ColorCorrect {
+ contrast 4
+ gain {0.5 0.1928000152 0.02000001073 0.5}
+ name ColorCorrect_sunset
+ xpos -13790
+ ypos 999
+}
+push $N29547cb0
+ColorCorrect {
+ gamma {1.019999981 0.6071040034 0.5507999659 0.400000006}
+ name ColorCorrect24_afternoon_late
+ xpos -13790
+ ypos 981
+}
+push $N29547cb0
+ColorCorrect {
+ gamma {1.019999981 0.6071040034 0.5507999659 0.400000006}
+ name ColorCorrect24_afternoon1
+ xpos -13790
+ ypos 963
+}
+push $N29547cb0
+ColorCorrect {
+ contrast 2
+ gamma 0.5
+ name ColorCorrect24_midday
+ xpos -13790
+ ypos 945
+}
+push $N29547cb0
+ColorCorrect {
+ contrast 2
+ gain 0.5
+ name ColorCorrect24_morning
+ xpos -13790
+ ypos 927
+}
+push $N29547cb0
+ColorCorrect {
+ gain {1 0.5270000696 0.1399999857 1}
+ name cloud_sunrise
+ xpos -13790
+ ypos 909
+}
+push $N29547cb0
+ColorCorrect {
+ gain {0.5 0.3365693688 0.1599999964 0.5}
+ name ColorCorrect_dawn
+ xpos -13790
+ ypos 891
+}
+clone $C1ccfbe40 {
+ inputs 8
+ xpos -13590
+ ypos 963
+ selected false
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge92
+ xpos -13590
+ ypos 1071
+}
+ShuffleCopy {
+ inputs 2
+ name ShuffleCopy3
+ xpos -13590
+ ypos 1107
+}
+Blur {
+ channels rgba
+ size 5
+ name Blur1
+ xpos -13590
+ ypos 1125
+}
+SoftClip {
+ conversion "logarithmic compress"
+ softclip_min 0
+ name SoftClip3
+ xpos -13590
+ ypos 1144
+}
+Grade {
+ whitepoint {0.4199999869 0.4199999869 0.4199999869 0.5}
+ black -0.008
+ name Grade2_01
+ xpos -13590
+ ypos 1166
+}
+ColorCorrect {
+ saturation 0.6
+ gain 1.1
+ midtones.contrast 1.5
+ midtones.gamma 0.9
+ name ColorCorrect1_01
+ xpos -13590
+ ypos 1180
+}
+push $N29162e00
+Shuffle {
+ in environment
+ alpha black
+ name ENVIRONMENT
+ xpos -13990
+ ypos 1197
+}
+Dot {
+ name Dot20
+ xpos -14206
+ ypos 1200
+}
+Dot {
+ name Dot25
+ xpos -14206
+ ypos 1398
+}
+set N29664e30 [stack 0]
+ColorCorrect {
+ saturation 0.5
+ contrast 2
+ gamma {1.102499962 1.130325079 1.5 1.5}
+ name ColorCorrect6
+ xpos -13940
+ ypos 1431
+}
+Grade {
+ blackpoint 0.016
+ whitepoint 0.78
+ white {1 0.3312000036 0.1200000048 1}
+ multiply 0.8
+ gamma 1.2
+ name Grade9
+ xpos -13940
+ ypos 1575
+}
+push $N29664e30
+ColorCorrect {
+ saturation 1.5
+ gamma 0.9
+ gain {1 0.5399999619 0.8987998962 1}
+ name ColorCorrect5
+ xpos -14040
+ ypos 1431
+}
+Grade {
+ multiply 2
+ add -0.004
+ name Grade4
+ xpos -14040
+ ypos 1575
+}
+push $N29664e30
+ColorCorrect {
+ saturation 0.8
+ contrast 2
+ gain 0.65
+ name ColorCorrect24
+ xpos -14140
+ ypos 1431
+}
+Grade {
+ blackpoint 0.026
+ whitepoint 0.43
+ black -0.0004
+ white {1 0.4376000166 0.2599999905 1}
+ name Grade56
+ xpos -14140
+ ypos 1575
+}
+push $N29664e30
+ColorCorrect {
+ saturation 1.02
+ contrast 1.04
+ gamma 0.98
+ gain 0.96
+ midtones.contrast {0.367200017 0.8856000304 1.350000024 1.080000043}
+ midtones.gain {1.188333273 1.136666656 1.549999952 0.9599999785}
+ name ColorCorrect7
+ xpos -14240
+ ypos 1431
+}
+Grade {
+ whitepoint 0.74
+ name Grade13
+ xpos -14240
+ ypos 1575
+}
+push $N29664e30
+ColorCorrect {
+ saturation 0.5
+ contrast 1.5
+ offset -0.15
+ name ColorCorrect27
+ xpos -14340
+ ypos 1431
+}
+Grade {
+ name Grade44
+ xpos -14340
+ ypos 1575
+}
+push $N29664e30
+Grade {
+ name Grade55
+ xpos -14440
+ ypos 1431
+}
+ColorCorrect {
+ saturation 0.7
+ contrast 2
+ gain {1.200000048 0.870000124 0.6000000238 1}
+ name ColorCorrect32
+ xpos -14440
+ ypos 1575
+}
+push $N29664e30
+Grade {
+ white 2.5
+ name Grade46
+ xpos -14540
+ ypos 1431
+}
+ColorCorrect {
+ contrast 2
+ gamma 0.8
+ name ColorCorrect9
+ xpos -14540
+ ypos 1503
+}
+Saturation {
+ name Saturation5
+ xpos -14540
+ ypos 1575
+}
+push $N29664e30
+Grade {
+ blackpoint 0.024
+ whitepoint 0.6
+ name Grade45
+ xpos -14640
+ ypos 1431
+}
+ColorCorrect {
+ saturation 1.3
+ contrast 0.8
+ gamma 1.2
+ gain {1.200000048 0.9600000381 1.131428599 1}
+ offset -0.005
+ name ColorCorrect30
+ xpos -14640
+ ypos 1575
+}
+clone $C1ccfbe40 {
+ inputs 8
+ xpos -14240
+ ypos 1683
+ selected false
+}
+Dot {
+ name Dot28
+ xpos -13756
+ ypos 1686
+}
+Dot {
+ name Dot27
+ xpos -13756
+ ypos 1200
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge73
+ xpos -13590
+ ypos 1197
+}
+Constant {
+ inputs 0
+ channels rgb
+ color 10
+ format "1440 810 0 0 1440 810 0.999563 "
+ name Constant1
+ xpos -13440
+ ypos 795
+}
+push $N19e45f40
+push $N19e45f40
+ShuffleCopy {
+ inputs 2
+ in depth_norm_env
+ in2 alpha
+ red red
+ green red
+ blue red
+ alpha red2
+ name ShuffleCopy7
+ xpos -13340
+ ypos 819
+}
+Merge2 {
+ inputs 2
+ operation under
+ name Merge56
+ xpos -13340
+ ypos 909
+}
+push $N19e45f40
+push $N19e45860
+Shuffle {
+ in colour
+ in2 alpha
+ alpha black
+ name COLOR2
+ xpos -14140
+ ypos -683
+}
+set N297a3700 [stack 0]
+Shuffle {
+ in diffuse
+ alpha black
+ name DIFFUSE
+ xpos -14140
+ ypos -503
+}
+set N297a3a70 [stack 0]
+Shuffle {
+ in indirect
+ alpha black
+ name INDIRECT
+ xpos -14140
+ ypos -391
+}
+set N29801c50 [stack 0]
+Shuffle {
+ in ao
+ in2 rgba
+ alpha alpha2
+ name AO
+ xpos -14140
+ ypos -355
+}
+set N29801fc0 [stack 0]
+Shuffle {
+ in specular
+ name SPECULAR
+ xpos -14140
+ ypos -276
+}
+set N29802330 [stack 0]
+Shuffle {
+ in refraction
+ name REFRACTION
+ xpos -14140
+ ypos -179
+}
+set N298026a0 [stack 0]
+Shuffle {
+ in matte_water
+ name MATTE_WATER_02
+ xpos -14140
+ ypos -143
+}
+set N29802a10 [stack 0]
+Shuffle {
+ in reflection
+ name REFLECTION
+ xpos -14140
+ ypos -89
+}
+set N29802d80 [stack 0]
+Shuffle {
+ in incandescence
+ green red
+ blue red
+ alpha red
+ name INCANDESCENCE
+ xpos -14140
+ ypos -35
+}
+set N298030f0 [stack 0]
+Shuffle {
+ in incandescence
+ green red
+ blue red
+ alpha red
+ name INCANDESCENCE2
+ xpos -14140
+ ypos 24
+}
+set N29803460 [stack 0]
+Shuffle {
+ in diffuse
+ alpha black
+ name DIFFUSE_02
+ xpos -14140
+ ypos 171
+}
+set N298037d0 [stack 0]
+Shuffle {
+ in facing_ratio
+ name FACING_RATIO
+ xpos -14140
+ ypos 225
+}
+set N29803b40 [stack 0]
+Shuffle {
+ in matte_water
+ name MATTE_WATER_01
+ xpos -14140
+ ypos 279
+}
+set N29803eb0 [stack 0]
+Shuffle {
+ in matte_ground
+ green red
+ blue red
+ alpha red
+ name MATTE_GROUND
+ xpos -14140
+ ypos 405
+}
+set N29804220 [stack 0]
+Shuffle {
+ in matte_houses
+ green red
+ blue red
+ alpha red
+ name MATTE_HOUSES
+ xpos -14140
+ ypos 441
+}
+set N29804590 [stack 0]
+Shuffle {
+ in matte_shrubs
+ green red
+ blue red
+ alpha red
+ name MATTE_SHRUBS
+ xpos -14140
+ ypos 495
+}
+set N29804900 [stack 0]
+Shuffle {
+ in matte_water
+ green red
+ blue red
+ alpha red
+ name MATTE_WATER
+ xpos -14142
+ ypos 533
+}
+push $N29804900
+push $N29804590
+push $N29804220
+push $N29803eb0
+Invert {
+ name Invert21
+ xpos -13790
+ ypos 273
+}
+push $N29803b40
+Invert {
+ name Invert22
+ xpos -14040
+ ypos 219
+}
+Grade {
+ gamma 0.2
+ name Grade47
+ xpos -13900
+ ypos 225
+}
+Merge2 {
+ inputs 2
+ operation mask
+ name Merge60
+ xpos -13790
+ ypos 225
+}
+push $N298037d0
+Merge2 {
+ inputs 2
+ operation multiply
+ name Merge61
+ xpos -13790
+ ypos 171
+}
+set N29805da0 [stack 0]
+Saturation {
+ saturation 0
+ name Saturation3
+ xpos -13689
+ ypos 225
+}
+Grade {
+ blackpoint 0.028
+ whitepoint 0.36
+ name Grade48
+ xpos -13590
+ ypos 225
+}
+push $N29805da0
+Read {
+ inputs 0
+ format "1920 1080 0 0 1920 1080 1 HD"
+ first 80
+ last 150
+ origfirst 80
+ origlast 150
+ origset true
+ name Read4
+ xpos -12917
+ ypos 58
+}
+Grade {
+ whitepoint {0.25 0.1866787374 0.149342984 1.399999976}
+ multiply 0.6
+ gamma {1 1.299999952 1.179999948 1}
+ name Grade5
+ xpos -13027
+ ypos 82
+}
+ColorCorrect {
+ midtones.contrast 0.4
+ name ColorCorrect2
+ xpos -13137
+ ypos 82
+}
+Glow2 {
+ tolerance 0.6
+ size 250
+ name Glow9
+ xpos -13247
+ ypos 82
+}
+push $N29803460
+Grade {
+ whitepoint 0.7
+ multiply 1.2
+ name Grade1
+ xpos -13849
+ ypos 24
+}
+Glow2 {
+ size 10
+ name Glow5
+ xpos -13747
+ ypos 24
+}
+Shuffle {
+ alpha red
+ name Shuffle1
+ xpos -13637
+ ypos 24
+}
+push $N298030f0
+Glow2 {
+ size 10
+ name Glow2
+ xpos -13787
+ ypos -35
+}
+push $N29802a10
+Invert {
+ name Invert23
+ xpos -13790
+ ypos -149
+}
+push $N29802a10
+push $N29802d80
+DegrainSimple {
+ inputs 1+1
+ rVal 50
+ gVal 50
+ bVal 50
+ name DegrainSimple3
+ xpos -14040
+ ypos -95
+}
+Grade {
+ blackpoint -0.0001
+ whitepoint 3.6
+ white 4
+ name Grade1_01
+ xpos -13790
+ ypos -89
+}
+Dot {
+ name Dot22
+ xpos -13556
+ ypos -86
+}
+Grade {
+ inputs 1+1
+ name Grade49
+ xpos -13590
+ ypos -143
+}
+push $N298026a0
+Grade {
+ multiply 0.5
+ gamma 0.8
+ name Grade20
+ xpos -13790
+ ypos -179
+}
+push $N29802330
+Grade {
+ multiply 0.75
+ name grade_dusk_spec
+ xpos -13940
+ ypos -204
+}
+push $N29802330
+Grade {
+ white {1 0.4500000477 0 1}
+ multiply 0.75
+ name Grade_sunset_spec
+ xpos -13940
+ ypos -222
+}
+push $N29802330
+Grade {
+ multiply 0.75
+ name grade_afternoon_late_spec
+ xpos -13940
+ ypos -240
+}
+push $N29802330
+Grade {
+ multiply 0.75
+ name grade_afternoon_spec
+ xpos -13940
+ ypos -258
+}
+push $N29802330
+Grade {
+ multiply 0.75
+ name grade_midday_spec
+ xpos -13940
+ ypos -276
+}
+push $N29802330
+Grade {
+ multiply 0.75
+ name grade_morning_spec
+ xpos -13940
+ ypos -294
+}
+push $N29802330
+Grade {
+ white {1 0.4500000477 0 1}
+ multiply 0.75
+ name Grade_sunrise_sunset
+ xpos -13940
+ ypos -312
+}
+push $N29802330
+Grade {
+ multiply 0.75
+ name grade_dawn_spec
+ xpos -13940
+ ypos -330
+}
+clone $C1ccfbe40 {
+ inputs 8
+ xpos -13790
+ ypos -276
+ selected false
+}
+Grade {
+ blackpoint 0.06
+ whitepoint 0.45
+ multiply 1.2
+ gamma 0.8
+ name Grade2
+ xpos -13600
+ ypos -275
+}
+push $N29801fc0
+DegrainSimple {
+ rVal 13
+ gVal 13
+ bVal 13
+ name DegrainSimple5
+ xpos -13790
+ ypos -361
+}
+push $N29801c50
+push $N297a3a70
+Grade {
+ name dusk
+ xpos -13790
+ ypos -449
+}
+push $N297a3a70
+Grade {
+ name sunset
+ xpos -13790
+ ypos -467
+}
+push $N297a3a70
+Grade {
+ name afternoon_late
+ xpos -13790
+ ypos -485
+}
+push $N297a3a70
+Grade {
+ name afternoon
+ xpos -13790
+ ypos -503
+}
+push $N297a3a70
+Grade {
+ name midday
+ xpos -13790
+ ypos -521
+}
+push $N297a3a70
+ColorCorrect {
+ gamma {1 0.6865000725 0.4300000072 1}
+ name cc_morning
+ xpos -13790
+ ypos -539
+}
+push $N297a3a70
+ColorCorrect {
+ gamma {1 0.6865000725 0.4300000072 1}
+ name cc_sunrise
+ xpos -13790
+ ypos -557
+}
+push $N297a3a70
+Grade {
+ white 4
+ name dawn
+ xpos -13790
+ ypos -575
+}
+clone $C1ccfbe40 {
+ inputs 8
+ xpos -13640
+ ypos -521
+ selected false
+}
+push $N297a3700
+Grade {
+ white 0.2
+ name Grade__dusk
+ xpos -13790
+ ypos -611
+}
+push $N297a3700
+Grade {
+ white 0.2
+ name Grade_sunset_col
+ xpos -13790
+ ypos -629
+}
+push $N297a3700
+Grade {
+ white 0.65
+ name Grade_afternoon_late_col
+ xpos -13790
+ ypos -647
+}
+push $N297a3700
+Grade {
+ white 0.65
+ name Grade_afternoon_col
+ xpos -13790
+ ypos -665
+}
+push $N297a3700
+Grade {
+ white 0.4
+ name Grade_midday_col
+ xpos -13790
+ ypos -683
+}
+push $N297a3700
+Grade {
+ white 0.4
+ name Grade_morning_col
+ xpos -13790
+ ypos -701
+}
+push $N297a3700
+Grade {
+ white 0.3
+ name Grade_sunrise_col
+ xpos -13790
+ ypos -719
+}
+push $N297a3700
+Grade {
+ white 0.2
+ name Grade_dawn_col
+ xpos -13790
+ ypos -737
+}
+clone $C1ccfbe40 {
+ inputs 8
+ xpos -13640
+ ypos -683
+ selected false
+}
+Dot {
+ name Dot21
+ xpos -13456
+ ypos -680
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge62
+ xpos -13490
+ ypos -521
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge63
+ xpos -13490
+ ypos -391
+}
+Merge2 {
+ inputs 2
+ operation multiply
+ mix 0.75
+ name Merge64
+ xpos -13490
+ ypos -355
+}
+Merge2 {
+ inputs 2
+ operation plus
+ invert_mask true
+ name Merge65
+ xpos -13490
+ ypos -275
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge66
+ xpos -13490
+ ypos -179
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge67
+ xpos -13490
+ ypos -143
+}
+Merge2 {
+ inputs 2
+ operation plus
+ invert_mask true
+ name Merge70
+ xpos -13490
+ ypos -35
+}
+Merge2 {
+ inputs 2
+ name Merge2
+ xpos -13490
+ ypos 24
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge4
+ xpos -13490
+ ypos 82
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge68
+ xpos -13490
+ ypos 171
+}
+Merge2 {
+ inputs 2
+ operation plus
+ mix 0.5
+ name Merge69
+ xpos -13490
+ ypos 225
+}
+ColorCorrect {
+ inputs 1+1
+ gain {0.7506498694 0.9773908854 1 1}
+ name ColorCorrect21
+ xpos -13490
+ ypos 405
+}
+ColorCorrect {
+ inputs 1+1
+ saturation 1.1
+ contrast 0.95
+ gamma 0.95
+ midtones.saturation 1.3
+ name ColorCorrect22
+ xpos -13490
+ ypos 441
+}
+ColorCorrect {
+ inputs 1+1
+ saturation 1.1
+ name ColorCorrect23
+ xpos -13490
+ ypos 495
+}
+ColorCorrect {
+ inputs 1+1
+ saturation {1.189285278 2.599999905 0.8399999738 1}
+ shadows.gamma 1.2
+ midtones.gamma 1.1
+ name ColorCorrect26
+ xpos -13490
+ ypos 529
+}
+ShuffleCopy {
+ inputs 2
+ name SH_ALPHA
+ xpos -13490
+ ypos 747
+}
+ShuffleCopy {
+ inputs 2
+ red red
+ green green
+ blue blue
+ out depth
+ name SH_DOF
+ xpos -13490
+ ypos 909
+}
+set N178c0d70 [stack 0]
+Shuffle {
+ in matte_boats
+ name in2
+ xpos -13340
+ ypos 945
+}
+push $N178c0d70
+ColorCorrect {
+ inputs 1+1
+ gain 2
+ name ColorCorrect14
+ xpos -13490
+ ypos 1035
+}
+Merge2 {
+ inputs 2
+ operation under
+ name Merge81
+ xpos -13490
+ ypos 1197
+}
+Merge2 {
+ inputs 2
+ name Merge86
+ xpos -13490
+ ypos 1251
+}
+ZDefocus2 {
+ serializeKnob ""
+ z_channel depth_norm.red
+ math depth
+ center 0.01621246338
+ focal_point {890 386}
+ dof 1.299999952
+ blur_dof false
+ size 1
+ max_size 5
+ filter_type bladed
+ filter_channel none
+ blades 10
+ name ZDefocus1
+ xpos -13490
+ ypos 1647
+}
+VectorBlur {
+ channels rgba
+ uv mv2DNormRemap
+ constant {-0.49606 -0.49606}
+ scale 450
+ method forward
+ alpha rgba.alpha
+ name VectorBlur2
+ xpos -13490
+ ypos 1687
+ disable true
+}
+Glow2 {
+ tint 0.4
+ tolerance 0.5
+ brightness 0.5
+ size 50
+ mix 0.5
+ name Glow3
+ xpos -13490
+ ypos 1773
+}
+set N178c2210 [stack 0]
+Dot {
+ name Dot15
+ xpos -13606
+ ypos 1776
+}
+TransformMasked {
+ channels {rgba.red -rgba.green -rgba.blue}
+ scale 0.999
+ center {720 405}
+ name Transform9
+ xpos -13640
+ ypos 1840
+}
+Dot {
+ name Dot23
+ xpos -13606
+ ypos 1938
+}
+push $N178c2210
+Dot {
+ name Dot18
+ xpos -13356
+ ypos 1776
+}
+TransformMasked {
+ channels {-rgba.red -rgba.green rgba.blue}
+ scale 1.001
+ center {720 405}
+ name Transform10
+ xpos -13390
+ ypos 1850
+}
+Dot {
+ name Dot19
+ xpos -13356
+ ypos 1938
+}
+Merge2 {
+ inputs 2
+ operation max
+ name Merge74
+ xpos -13490
+ ypos 1935
+}
+SoftClip {
+ conversion "logarithmic compress"
+ softclip_min 0
+ softclip_max 3
+ name SoftClip2
+ xpos -13490
+ ypos 1989
+}
+Write {
+ file K:/003_Comp/Episodes/ep106/sh007/png/ep106_sh007_####.png
+ colorspace sRGB
+ file_type png
+ checkHashOnRead false
+ version 174
+ name Write3
+ xpos -13490
+ ypos 2046
+}
+push $N19e45860
+Viewer {
+ inputs 2
+ frame_range 1-200
+ input_process false
+ translate {0.1400000006 0.1150000021}
+ name Viewer1
+ xpos -13490
+ ypos 2564
+}
+StickyNote {
+ inputs 0
+ name StickyNote21
+ label keylight
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 15
+ xpos -14490
+ ypos 600
+}
+StickyNote {
+ inputs 0
+ name StickyNote25
+ label splash
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 15
+ xpos -12817
+ ypos 78
+}
+StickyNote {
+ inputs 0
+ name StickyNote26
+ label splash
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 15
+ xpos -10617
+ ypos 45
+}

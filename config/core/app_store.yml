@@ -1,0 +1,9 @@
+# Shotgun Pipeline Toolkit configuration file
+# this file was automatically created
+
+host: https://tank.shotgunstudio.com
+api_script: com_shotgunstudio_bubblebathbay
+api_key: 995afb41acdf040eb5531dddae35c3ab81f1b83e
+http_proxy: null
+
+# End of file.
