@@ -2,6 +2,27 @@ description: Apps and Engines related to Asset based work.
 engines:
   tk-maya:
     apps:
+      tk-custom-workfiles:
+        display_name: Custom File Manager
+        allow_task_creation: true
+        file_extensions: []
+        hook_copy_file: default
+        hook_filter_publishes: default
+        hook_filter_work_files: default
+        hook_scene_operation: default
+        launch_at_startup: false
+        launch_change_work_area_at_startup: false
+        location: {name: tk-custom-workfiles, path: 'T:/software/lsapipeline/install/apps/tk-custom-workfiles', type: dev}
+        saveas_default_name: scene
+        saveas_prefer_version_up: true
+        sg_entity_type_extra_display_fields: {}
+        sg_entity_type_filters: {}
+        sg_entity_types: [Shot, Asset]
+        task_extra_display_fields: []
+        template_publish: maya_asset_publish
+        template_publish_area: asset_publish_area_maya
+        template_work: maya_asset_work
+        template_work_area: asset_work_area_maya
       tk-bbb-mayaOcean:
         button_name: 3. RIG/a. Create a maya ocean for rig testing...
         display_name: 3. RIG/a. Create a maya ocean  for rig testing...
@@ -738,6 +759,7 @@ engines:
     - {app_instance: tk-multi-snapshot, name: Snapshot...}
     - {app_instance: tk-multi-workfiles, name: Shotgun Save As...}
     - {app_instance: tk-multi-publish, name: Publish...}
+    - {app_instance: tk-custom-workfiles, name: Custom File Manager...}
     template_project: asset_work_area_maya
     use_sgtk_as_menu_name: false
   tk-nuke:
