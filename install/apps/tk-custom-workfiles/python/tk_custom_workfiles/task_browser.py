@@ -15,6 +15,9 @@ import threading
 
 from tank.platform.qt import QtCore, QtGui
 
+import taskList
+reload(taskList)
+
 browser_widget = tank.platform.import_framework("tk-framework-widget", "browser_widget")
 
 
@@ -101,30 +104,27 @@ class TaskBrowserWidget(browser_widget.BrowserWidget):
                                                     fields)
         else:
             # get all tasks
-            output["tasks"] = self._app.shotgun.find("Task", 
-                                                [ ["project", "is", self._app.context.project],
-                                                  ["step", "is_not", None],
-                                                  ["entity", "is", data["entity"] ] ], 
-                                                fields)
-        
+            taskList_Var = taskList.TaskList()
+            listOfTask = taskList_Var.getTaskList()
+            output["tasks"] = listOfTask.get(output["associated_entity"]["code"])[1]
+
             # get all the users where tasks are assigned.
             user_ids = []
             for task in output["tasks"]:
                 user_ids.extend( [ x["id"] for x in task.get("task_assignees", []) ] )
-            
             if len(user_ids) > 0:
                 # use super weird filter syntax....
                 sg_filter = ["id", "in"]
                 sg_filter.extend(user_ids)
-                output["users"] = self._app.shotgun.find("HumanUser", [ sg_filter ], ["image"])
+#                 output["users"] = self._app.shotgun.find("HumanUser", [ sg_filter ], ["image"])
+                output["users"] = {}
             else:
                 output["users"] = []
 
         # sort tasks so that they are in the correct (step.Step.list_order) order:
         output["tasks"].sort(key=lambda v:(v.get("step.Step.list_order") or sys.maxint, v.get("content")))
-        
         return output
-                    
+
     def process_result(self, result):
         
         entity_data = result["associated_entity"]
@@ -150,7 +150,6 @@ class TaskBrowserWidget(browser_widget.BrowserWidget):
             
             for d in tasks:
                 i = self.add_item(browser_widget.ListItem)
-                
                 details = []
 
                 # figure out the name to display for the task

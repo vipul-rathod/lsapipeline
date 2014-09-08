@@ -60,7 +60,7 @@ class WorkFiles(object):
         """
         self._app = app
         self._workfiles_ui = None
-
+        
         # user cache used to cache Shotgun user details:
         self._user_cache = UserCache(self._app)
         
@@ -88,12 +88,12 @@ class WorkFiles(object):
         """
         try:
             from .work_files_form import WorkFilesForm
-            self._workfiles_ui = self._app.engine.show_dialog("Shotgun File Manager", self._app, 
+            self._workfiles_ui = self._app.engine.show_dialog("Custom File Manager", self._app, 
                                                               WorkFilesForm, self._app, self)
         except:
             self._app.log_exception("Failed to create File Manager dialog!")
             return
-
+        
         # hook up signals:
         self._workfiles_ui.open_publish.connect(self._on_open_publish)
         self._workfiles_ui.open_workfile.connect(self._on_open_workfile)
@@ -704,10 +704,10 @@ class WorkFiles(object):
 #            dir(self._app) ['_Application__engine', '_Application__instance_name', '_TankBundle__context', '_TankBundle__descriptor', '_TankBundle__environment', '_TankBundle__execute_hook_internal', '_TankBundle__frameworks', '_TankBundle__module_uid', '_TankBundle__post_process_settings_r', '_TankBundle__resolve_hook_path', '_TankBundle__resolve_setting_value', '_TankBundle__settings', '_TankBundle__sg', '_TankBundle__tk', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_can_change_version', '_can_save_as', '_destroy_frameworks', 'cache_location', 'can_save_as', 'context', 'description', 'descriptor', 'destroy_app', 'disk_location', 'display_name', 'documentation_url', 'engine', 'ensure_folder_exists', 'execute_hook', 'execute_hook_by_name', 'execute_hook_expression', 'execute_hook_method', 'frameworks', 'get_setting', 'get_setting_from', 'get_template', 'get_template_by_name', 'get_template_from', 'icon_256', 'import_module', 'init_app', 'instance_name', 'log_debug', 'log_error', 'log_exception', 'log_info', 'log_warning', 'name', 'post_engine_init', 'settings', 'sgtk', 'shotgun', 'show_change_version_dlg', 'show_change_work_area_dlg', 'show_file_manager_dlg', 'show_save_as_dlg', 'support_url', 'tank', 'version']
 
 
-            print 'Entity = %s\n' % self._context._Context__entity
-            print 'Step = %s\n' % self._context._Context__step
-            print 'Task = %s\n' % self._context._Context__task
-            print 'Fields From Shotgun = %s\n' % self._context._fields_from_shotgun
+#             print 'Entity = %s\n' % self._context._Context__entity
+#             print 'Step = %s\n' % self._context._Context__step
+#             print 'Task = %s\n' % self._context._Context__task
+#             print 'Fields From Shotgun = %s\n' % self._context._fields_from_shotgun
             
             self.assetName = self._context._Context__entity['name']
             self.step = self._context._Context__step['name']

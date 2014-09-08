@@ -210,7 +210,6 @@ class WorkFilesForm(QtGui.QWidget):
         # clear and reload list:
         self._ui.file_list.clear()
         self._ui.file_list.load({"handler":self._handler, "filter":filter})
-        
         self._on_file_selection_changed()
         
     def _on_filter_selection_changed(self, idx):

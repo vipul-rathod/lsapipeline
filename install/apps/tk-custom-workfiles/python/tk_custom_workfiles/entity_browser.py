@@ -15,6 +15,9 @@ import threading
 
 from tank.platform.qt import QtCore, QtGui
 
+import assetShotList
+reload(assetShotList)
+
 browser_widget = tank.platform.import_framework("tk-framework-widget", "browser_widget")
 
 class EntityBrowserWidget(browser_widget.BrowserWidget):
@@ -104,24 +107,38 @@ class EntityBrowserWidget(browser_widget.BrowserWidget):
                     # append to results:
                     sg_data.append({"type":et, "data":entities})
         else:
-            # load all entities
+#             # load all entities
+#             for et in self.__entity_types_to_load:
+#                 
+#                 sg_filters = [ ["project", "is", self._app.context.project] ]
+#                 
+#                 if et in self.__entity_type_filters:
+#                     # have a custom filter specified in the settings!
+#                     sg_filters.extend( self.__entity_type_filters[et] )
+#                 
+#                 # get entities from shotgun:
+#                 entities = self._app.shotgun.find(et, 
+#                                                   sg_filters, 
+#                                                   query_fields + self.__entity_type_extra_fields.get(et, {}).values(),
+#                                                   [{"field_name": "code", "direction": "asc"}])
+#                 # append to results:
+#                 sg_data.append({"type":et, "data":entities})
+
+            entityList = assetShotList.AssetShotList()
             for et in self.__entity_types_to_load:
-                
+                 
                 sg_filters = [ ["project", "is", self._app.context.project] ]
-                
+                 
                 if et in self.__entity_type_filters:
                     # have a custom filter specified in the settings!
                     sg_filters.extend( self.__entity_type_filters[et] )
                 
-                # get entities from shotgun:
-                entities = self._app.shotgun.find(et, 
-                                                  sg_filters, 
-                                                  query_fields + self.__entity_type_extra_fields.get(et, {}).values(),
-                                                  [{"field_name": "code", "direction": "asc"}])
-                                
-                # append to results:
-                sg_data.append({"type":et, "data":entities})
-        
+                if et == 'Shot':
+                    entities = entityList.getShotList()
+                    sg_data.append({"type":et, "data":entities})
+                else:
+                    entities = entityList.getAssetList()
+                    sg_data.append({"type":et, "data":entities})
         return {"data": sg_data, "current_entity" : current_entity}
 
 

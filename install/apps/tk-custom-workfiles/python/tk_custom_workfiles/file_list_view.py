@@ -62,7 +62,7 @@ class FileListView(browser_widget.BrowserWidget):
     # Enable to force all work to be done in the main thread
     # which can help when debugging
     # IMPORTANT - set this to False before releasing!!!
-    DEBUG_GET_DATA_IN_MAIN_THREAD=False
+    DEBUG_GET_DATA_IN_MAIN_THREAD=True
     
     def get_data(self, data):
         """
@@ -72,6 +72,10 @@ class FileListView(browser_widget.BrowserWidget):
         if FileListView.DEBUG_GET_DATA_IN_MAIN_THREAD:
             # debug only - _get_data will be called first in
             # process_result which runs in the main thread
+            
+#             print dir(data['filter'])   #['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_app', '_can_change_workarea', '_configuration_is_valid', '_context', '_copy_file', '_create_folders', '_do_change_work_area', '_do_copy_and_open', '_do_open_publish_as_workfile', '_do_open_publish_read_only', '_do_open_workfile', '_get_app_settings_for_context', '_get_next_available_version', '_get_templates_for_context', '_get_usersandbox_users', '_on_new_file', '_on_open_previous_publish', '_on_open_previous_workfile', '_on_open_publish', '_on_open_workfile', '_on_show_in_file_system', '_on_show_in_shotgun', '_publish_area_template', '_publish_template', '_restart_engine', '_update_current_work_area', '_user_cache', '_work_area_template', '_work_template', '_workfiles_ui', 'can_change_work_area', 'can_do_new_file', 'change_work_area', 'create_new_task', 'find_files', 'get_current_work_area', 'get_file_filters', 'have_valid_configuration_for_work_area', 'select_work_area', 'show_change_work_area_dlg', 'show_dlg', 'show_file_manager_dlg']
+#             print dir(data['handler'])  #['PUBLISHES_MODE', 'WORKFILES_MODE', '__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_filter_dict', 'list_title', 'menu_label', 'mode', 'show_in_file_system', 'user']
+
             return data
         else:
             return self._get_data(data)

@@ -53,6 +53,7 @@ class MainUI(QtGui.QWidget):
         debug(app = None, method = 'MainUI', message= 'Building MainUI', verbose = False)
         debug(app = None, method = 'Main_UI', message = 'INIT ChangeWorkSpace UI', verbose = False)
         self.app = app
+        print self.app.context.project
         
         ## Now start the api
         tk = sgtk.sgtk_from_path("T:/software/bubblebathbay")

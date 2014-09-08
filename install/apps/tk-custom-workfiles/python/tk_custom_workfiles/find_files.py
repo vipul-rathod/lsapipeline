@@ -54,6 +54,7 @@ class FileFinder(object):
     
         # find all work & publish files and filter out any that should be ignored:
         work_files = self.__find_work_files(context, work_template)
+        print work_files
         work_files = [wf for wf in work_files if not self.__ignore_file_path(wf["path"])]
         
         published_files = self.__find_publishes(context, publish_template)
@@ -304,7 +305,7 @@ class FileFinder(object):
         # find all versions so skip the 'version' key if it's present:
         work_file_paths = self.__app.sgtk.paths_from_template(work_template, work_fields, ["version"], 
                                                              skip_missing_optional_keys=True)
-        
+        print work_file_paths
         # build list of work files to send to the filter_work_files hook:
         hook_work_files = [{"work_file":{"path":path}} for path in work_file_paths]
         

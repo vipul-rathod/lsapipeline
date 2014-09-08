@@ -81,29 +81,29 @@ class MultiWorkFiles(tank.platform.Application):
                                      "engines: %s" % ", ".join(SUPPORTED_ENGINES))
 
     def destroy_app(self):
-        self.log_debug("Destroying tk-multi-workfiles")
+        self.log_debug("Destroying tk-custom-workfiles")
         
     def show_file_manager_dlg(self):
         """
         Show the file manager dialog
         """
-        tk_multi_workfiles = self.import_module("tk_multi_workfiles")
-        tk_multi_workfiles.WorkFiles.show_file_manager_dlg(self)
+        tk_custom_workfiles = self.import_module("tk_custom_workfiles")
+        tk_custom_workfiles.WorkFiles.show_file_manager_dlg(self)
         
     def show_change_work_area_dlg(self, enable_start_new=True):
         """
         Show a dialog for the user to change the current Work Area
         """
-        tk_multi_workfiles = self.import_module("tk_multi_workfiles")
-        tk_multi_workfiles.WorkFiles.show_change_work_area_dlg(self, enable_start_new)
+        tk_custom_workfiles = self.import_module("tk_custom_workfiles")
+        tk_custom_workfiles.WorkFiles.show_change_work_area_dlg(self, enable_start_new)
 
     def show_save_as_dlg(self):
         """
         If save as is available, show the save as dialog.
         """
         if self._can_save_as:
-            tk_multi_workfiles = self.import_module("tk_multi_workfiles")
-            return tk_multi_workfiles.SaveAs.show_save_as_dlg(self)
+            tk_custom_workfiles = self.import_module("tk_custom_workfiles")
+            return tk_custom_workfiles.SaveAs.show_save_as_dlg(self)
         else:
             return False
 
@@ -112,8 +112,8 @@ class MultiWorkFiles(tank.platform.Application):
         If save as is available, show the change version dialog.
         """
         if self._can_change_version:
-            tk_multi_workfiles = self.import_module("tk_multi_workfiles")
-            return tk_multi_workfiles.Versioning.show_change_version_dlg(self)
+            tk_custom_workfiles = self.import_module("tk_custom_workfiles")
+            return tk_custom_workfiles.Versioning.show_change_version_dlg(self)
         else:
             return False
 
