@@ -17,7 +17,12 @@ engines:
     location: {name: tk-maya, type: app_store, version: v0.4.2}
     menu_favourites:
     - {app_instance: tk-multi-workfiles, name: Shotgun File Manager...}
+    - {app_instance: tk-multi-loader2, name: 0. Full Loader 2.0...}
     template_project: null
+    shotPublishPathTemplate: maya_shot_publish
+    shotWorkPathTemplate: maya_shot_work
+    assetPublishPathTemplate: maya_asset_publish
+    assetWorkPathTemplate: maya_asset_work
     use_sgtk_as_menu_name: false
   tk-nuke:
     apps: '@default_proxy_apps'

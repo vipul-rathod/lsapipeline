@@ -52,7 +52,7 @@ class SgPublishTypeModel(ShotgunOverlayModel):
         # first figure out which fields to get from shotgun
         app = sgtk.platform.current_bundle()
         publish_entity_type = sgtk.util.get_published_file_entity_type(app.sgtk)
-        
+
         if publish_entity_type == "PublishedFile":
             publish_type_field = "PublishedFileType"
         else:

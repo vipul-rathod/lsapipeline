@@ -22,6 +22,45 @@ default_proxy_apps:
     template_publish_area: null
     template_work: null
     template_work_area: null
+  tk-multi-loader2-FULL_LOADER:
+    action_mappings:
+      Maya Scene: [open, audio, assemblyReference, reference, import, texture_node,
+        importENV, loadSurfVar, coreArchive]
+      Photoshop Image: [texture_node]
+      Rendered Image: [texture_node]
+    actions_hook: '{config}/tk-maya_actions.py'
+    download_thumbnails: true
+    entities:
+    - caption: Assets
+      entity_type: Asset
+      filters:
+      - [project, is, '{context.project}']
+      hierarchy: [sg_asset_type, code]
+    - caption: Shots
+      entity_type: Shot
+      filters:
+      - [project, is, '{context.project}']
+      hierarchy: [sg_sequence, code]
+    - caption: Audio
+      entity_type: CustomEntity03
+      filters:
+      - [project, is, '{context.project}']
+      hierarchy: [sg_sequence_1, code]
+    - caption: My Tasks
+      entity_type: Task
+      filters:
+      - [task_assignees, is, '{context.user}']
+      - [project, is, '{context.project}']
+      hierarchy: [entity, content]
+    filter_publishes_hook: '{self}/filter_publishes.py'
+    location: {name: tk-multi-loader2, type: app_store, version: v1.2.1}
+    menu_name: 0. Full Loader 2.0
+    publish_filters: []
+    shotPublishPathTemplate: maya_shot_publish
+    shotWorkPathTemplate: maya_shot_work
+    assetPublishPathTemplate: maya_asset_publish
+    assetWorkPathTemplate: maya_asset_work
+    title_name: File Loader 2.0
 frameworks:
   tk-framework-qtwidgets_v1.x.x:
     location: {name: tk-framework-qtwidgets, type: app_store, version: v1.0.0}

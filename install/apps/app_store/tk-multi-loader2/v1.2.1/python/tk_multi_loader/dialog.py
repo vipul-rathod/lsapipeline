@@ -8,7 +8,7 @@
 # agreement to the Shotgun Pipeline Toolkit Source Code License. All rights
 # not expressly granted therein are reserved by Shotgun Software Inc.
 
-import sgtk
+import sgtk, os
 from sgtk import TankError
 from sgtk.platform.qt import QtCore, QtGui
 
@@ -24,6 +24,8 @@ from .model_publishhistory import SgPublishHistoryModel
 from .delegate_publish_history import SgPublishHistoryDelegate
 
 from .ui.dialog import Ui_Dialog
+
+import maya.cmds as cmds
 
 # import frameworks
 shotgun_model = sgtk.platform.import_framework("tk-framework-shotgunutils", "shotgun_model")
@@ -115,7 +117,7 @@ class AppDialog(QtGui.QWidget):
                                                       self._action_manager,
                                                       self._settings_manager)
         self.ui.publish_type_list.setModel(self._publish_type_model)
-
+        
         #################################################
         # setup publish model
         self._publish_model = SgLatestPublishModel(self, self.ui.publish_view, self._publish_type_model)
@@ -156,6 +158,12 @@ class AppDialog(QtGui.QWidget):
         self._refresh_action = QtGui.QAction("Refresh", self.ui.publish_view)
         self._refresh_action.triggered.connect(self._publish_model.async_refresh)
         self.ui.publish_view.addAction(self._refresh_action)
+        self.ui.publish_view.setContextMenuPolicy(QtCore.Qt.ActionsContextMenu)
+        
+        # set up right click menu for the main publish view to create folders- By Vipul Jain
+        self._createFolders_history_action = QtGui.QAction("Create Folders", self.ui.publish_view)
+        self._createFolders_history_action.triggered.connect(self._createFolders_Fn)
+        self.ui.publish_view.addAction(self._createFolders_history_action)
         self.ui.publish_view.setContextMenuPolicy(QtCore.Qt.ActionsContextMenu)
 
         #################################################
@@ -1214,6 +1222,7 @@ class AppDialog(QtGui.QWidget):
                 # and on the associated data role
                 sg_data = tmp_item.get_sg_data()
                 field_data = shotgun_model.get_sanitized_data(tmp_item, SgEntityModel.SG_ASSOCIATED_FIELD_ROLE)
+
                 # examples of data:
                 # intermediate node: {'name': 'sg_asset_type', 'value': 'Character' }
                 # intermediate node: {'name': 'sg_sequence',   'value': {'type': 'Sequence', 'id': 11, 'name': 'bunny_080'}}
@@ -1270,6 +1279,55 @@ class AppDialog(QtGui.QWidget):
 
         self.ui.entity_breadcrumbs.setText("<big>%s</big>" % breadcrumbs)
 
+#    Custom Functions for create folders context menu (By Vipul Jain/Rathod)
+    def _createFolders_Fn(self):
+        if self._publish_model._ShotgunModel__all_tree_items:
+            print 'file already exists'
+        else:
+            selectedItem = self._get_selected_entity()
+            if selectedItem:
+                entityType = selectedItem.get_sg_data()['type']
+                app = sgtk.platform.current_bundle()
+                if entityType == 'Shot':
+                    entityId = selectedItem.get_sg_data()['id']
+                    tk = sgtk.sgtk_from_path('T:/software/lsapipeline')
+                    tk.create_filesystem_structure(entityType, entityId)
+                    self.shotPublishPath = tk.templates[self.app.get_setting('shotPublishPathTemplate')]
+                elif entityType == 'Asset':
+                    entityId = selectedItem.get_sg_data()['id']
+                    tk = sgtk.sgtk_from_path('T:/software/lsapipeline')
+                    tk.create_filesystem_structure(entityType, entityId)
+                    self.assetPublishPath = tk.templates[app.get_setting('assetPublishPathTemplate')]
+                    self.fields = {}
+                    self.fields['sg_asset_type'] = selectedItem.get_sg_data()['sg_asset_type']
+                    self.fields['Asset'] = selectedItem.get_sg_data()['code']
+                    self.fields['name'] = selectedItem.get_sg_data()['code'].replace('_', '')
+                    self.fields['version'] = 000
+                    tasks = tk.shotgun.find_one('Asset', [['id', 'is', selectedItem.get_sg_data()['id']]], fields = ['tasks'])['tasks']
+                    for each in tasks:
+                        if each['name'] != 'Design' and each['name'] != 'Texture' and each['name'] != 'UV':
+                            if each['name'] == 'Model':
+                                self.fields['Step'] = 'MDL'
+                                publishPath = self.assetPublishPath.apply_fields(self.fields)
+                            elif each['name'] == 'Rig':
+                                self.fields['Step'] = 'RIG'
+                                publishPath = self.assetPublishPath.apply_fields(self.fields)
+                            elif each['name'] == 'Surface':
+                                self.fields['Step'] = 'SRF'
+                                publishPath = self.assetPublishPath.apply_fields(self.fields)
+                            else:
+                                pass
+                            if not os.path.exists(publishPath):
+                                ctx = tk.context_from_path(publishPath)
+                                fileName = '%s.v000.mb' % self.fields['name']
+                                sgtk.util.register_publish(tk, ctx, publishPath, fileName, self.fields['version'], task = each,  published_file_type = 'Maya Scene')
+                                cmds.file(new=1, f=1)
+                                cmds.file(rename = publishPath)
+                                cmds.file(s=1, f=1)
+                            else:
+                                "File Already exists"
+            else:
+                print "Select proper asset/shot please"
 
 ################################################################################################
 # Helper stuff

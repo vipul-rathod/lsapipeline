@@ -207,6 +207,8 @@ engines:
         location: {name: tk-multi-loader2, type: app_store, version: v1.2.1}
         menu_name: 0. Full Loader 2.0
         publish_filters: []
+        shotPublishPathTemplate: maya_shot_publish
+        shotWorkPathTemplate: maya_shot_work
         title_name: File Loader 2.0
         
       tk-multi-loader2-ANIM_Loader:
@@ -257,6 +259,8 @@ engines:
         filter_publishes_hook: '{self}/filter_publishes.py'
         location: {name: tk-multi-loader2, type: app_store, version: v1.2.1}
         menu_name: 3. Anim/0. ANIM Loader...
+        shotPublishPathTemplate: maya_shot_publish
+        shotWorkPathTemplate: maya_shot_work
         publish_filters: []
         title_name: File Loader 2.0
 
@@ -300,6 +304,8 @@ engines:
         filter_publishes_hook: '{self}/filter_publishes.py'
         location: {name: tk-multi-loader2, type: app_store, version: v1.2.1}
         menu_name: 5. FX/0. FX Loader...
+        shotPublishPathTemplate: maya_shot_publish
+        shotWorkPathTemplate: maya_shot_work
         publish_filters: []
         title_name: File Loader 2.0
 
@@ -349,6 +355,8 @@ engines:
         filter_publishes_hook: '{self}/filter_publishes.py'
         location: {name: tk-multi-loader2, type: app_store, version: v1.2.1}
         menu_name: 2. Layout/0. LAYOUT Loader...
+        shotPublishPathTemplate: maya_shot_publish
+        shotWorkPathTemplate: maya_shot_work
         publish_filters: []
         title_name: File Loader 2.0
 
@@ -406,6 +414,8 @@ engines:
         filter_publishes_hook: '{self}/filter_publishes.py'
         location: {name: tk-multi-loader2, type: app_store, version: v1.2.1}
         menu_name: 4. Light/0. LGHT Loader...
+        shotPublishPathTemplate: maya_shot_publish
+        shotWorkPathTemplate: maya_shot_work
         publish_filters: []
         title_name: File Loader 2.0
       
@@ -456,6 +466,8 @@ engines:
         filter_publishes_hook: '{self}/filter_publishes.py'
         location: {name: tk-multi-loader2, type: app_store, version: v1.2.1}
         menu_name: 1. Filtered Loaders/0. ENV | BLD | LND ...
+        shotPublishPathTemplate: maya_shot_publish
+        shotWorkPathTemplate: maya_shot_work
         publish_filters: []
         title_name: File Loader 2.0
 

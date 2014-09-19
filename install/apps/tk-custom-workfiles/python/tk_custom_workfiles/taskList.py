@@ -1,3 +1,4 @@
+import time
 import sys
 import pickle
 
@@ -7,10 +8,10 @@ import sgtk
 
 class TaskList(object):
     def __init__(self):
-        self.databaseTaskFilePath = 'T:/software/lsapipeline/install/apps/tk-custom-workfiles/python/tk_custom_workfiles/database/ShotgunTaskList.txt'
+        self.databaseTaskFilePath = 'T:/software/lsapipeline/install/apps/tk-custom-workfiles/python/tk_custom_workfiles/database/ShotgunTaskList.yaml'
 
     def getTaskList(self):
-        taskFile = open(self.databaseTaskFilePath, 'rb')
+        taskFile = file(self.databaseTaskFilePath, 'r')
         newTaskList = pickle.load(taskFile)
         taskFile.close()
         return newTaskList
@@ -20,3 +21,4 @@ class TaskList(object):
 
 if __name__ == '__main__':
     taskList = TaskList()
+    abc = taskList.getTaskList()

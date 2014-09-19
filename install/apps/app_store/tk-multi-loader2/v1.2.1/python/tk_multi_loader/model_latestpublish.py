@@ -259,7 +259,7 @@ class SgLatestPublishModel(ShotgunOverlayModel):
                                        hierarchy=["code"],
                                        fields=publish_fields,
                                        order=[{"field_name":"created_at", "direction":"asc"}])
-
+        
         # now calculate type aggregates
         type_id_aggregates = defaultdict(int)
         for x in range(self.invisibleRootItem().rowCount()):

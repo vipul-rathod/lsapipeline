@@ -116,6 +116,25 @@ configuration:
         allows_empty: True
         default_value: []
 
+    shotPublishPathTemplate:
+        type: str
+        default_value: maya_shot_publish
+        description: Template for base shot path
+
+    assetPublishPathTemplate:
+        type: str
+        default_value: maya_asset_publish
+        description: Template for base asset path
+
+    shotWorkPathTemplate:
+        type: str
+        default_value: maya_shot_work
+        description: Template for work shot path
+
+    assetWorkPathTemplate:
+        type: str
+        default_value: maya_asset_work
+        description: Template for work asset path
 
 # this app works in all engines - it does not contain
 # any host application specific commands
