@@ -59,7 +59,7 @@ configuration:
             Rendered Image: [read_node]
             Nuke Script: [script_import]
         default_value_tk-maya:
-            Maya Scene: [reference, import]
+            Maya Scene: [open_work_file, reference, import]
             Rendered Image: [texture_node]
             Photoshop Image: [texture_node]
         default_value_tk-motionbuilder:

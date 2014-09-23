@@ -24,7 +24,7 @@ default_proxy_apps:
     template_work_area: null
   tk-multi-loader2-FULL_LOADER:
     action_mappings:
-      Maya Scene: [open, audio, assemblyReference, reference, import, texture_node,
+      Maya Scene: [open, open_work_file, audio, assemblyReference, reference, import, texture_node,
         importENV, loadSurfVar, coreArchive]
       Photoshop Image: [texture_node]
       Rendered Image: [texture_node]

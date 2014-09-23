@@ -87,6 +87,13 @@ class MayaActions(HookBaseClass):
                                       "params": None,
                                       "caption": "Open maya scene file", 
                                       "description": "This will open the maya publish file."} )
+            
+        if "open_work_file" in actions:
+            action_instances.append( {"name": "open_work_file", 
+                                      "params": None,
+                                      "caption": "Open maya work file", 
+                                      "description": "This will open the maya work file."} )
+            
 
         if "audio" in actions:
             action_instances.append( {"name": "audio", 
@@ -202,6 +209,7 @@ class MayaActions(HookBaseClass):
         
         # resolve path
         path = self.get_publish_path(sg_publish_data)
+        print path
 
         if name == "assemblyReference":
             self._create_assemblyReference(path, sg_publish_data)
@@ -223,6 +231,9 @@ class MayaActions(HookBaseClass):
 
         if name == "open":
             self._openScene(path, sg_publish_data)
+        
+        if name == "open_work_file":
+            self._openWorkFile(path, sg_publish_data)
 
         if name == "coreArchive":
             self._add_coreArchive(path, sg_publish_data)
@@ -340,6 +351,27 @@ class MayaActions(HookBaseClass):
             raise Exception("File not found on disk - '%s'" % path)
                 
         cmds.file(path, o = True, f = True)
+
+    def _openWorkFile(self, path, sg_publish_data):
+        """
+        Create a reference with the same settings Maya would use
+        if you used the create settings dialog.
+        
+        :param path: Path to file.
+        :param sg_publish_data: Shotgun data dictionary with all the standard publish fields.
+        """
+        import maya.cmds as cmds
+
+        if not os.path.exists(path):
+            raise Exception("File not found on disk - '%s'" % path)
+        
+        workPath = path.split(os.path.basename(path))[0]
+        if not os.path.exists(workPath):
+            raise Exception("File not found on disk - '%s'" % path)
+        workFilePath = '%s/*.ma' % workPath
+        workFile = cmds.fileDialog(dm = workFilePath.replace('publish', 'work'))
+        cmds.file(workFile, o = True, f = True)
+
 
     def _create_audio_node(self, path, sg_publish_data):
         """

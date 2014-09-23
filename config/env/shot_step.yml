@@ -175,7 +175,7 @@ engines:
       
       tk-multi-loader2-FULL_LOADER:
         action_mappings:
-          Maya Scene: [open, audio, assemblyReference, reference, import, texture_node,
+          Maya Scene: [open, open_work_file, audio, assemblyReference, reference, import, texture_node,
             importENV, loadSurfVar, coreArchive]
           Photoshop Image: [texture_node]
           Rendered Image: [texture_node]
@@ -213,7 +213,7 @@ engines:
         
       tk-multi-loader2-ANIM_Loader:
         action_mappings:
-          Maya Scene: [open, openLayout, reference, import]
+          Maya Scene: [open, open_work_file, openLayout, reference, import]
           Photoshop Image: [texture_node]
           Rendered Image: [texture_node]
         actions_hook: '{config}/tk-maya_actions.py'
@@ -266,7 +266,7 @@ engines:
 
       tk-multi-loader2-FX_Loader:
         action_mappings:
-          Maya Scene: [open, reference, import, loadANIMForFX, fx_ATOM]
+          Maya Scene: [open, open_work_file, reference, import, loadANIMForFX, fx_ATOM]
           Photoshop Image: [texture_node]
           Rendered Image: [texture_node]
         actions_hook: '{config}/tk-maya_actions.py'
@@ -311,7 +311,7 @@ engines:
 
       tk-multi-loader2-Layout_Loader:
         action_mappings:
-          Maya Scene: [open, reference, import, audio]
+          Maya Scene: [open, open_work_file, reference, import, audio]
           Photoshop Image: [texture_node]
           Rendered Image: [texture_node]
         actions_hook: '{config}/tk-maya_actions.py'

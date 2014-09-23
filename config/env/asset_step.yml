@@ -59,7 +59,7 @@ engines:
         location: {name: tk-multi-about, type: app_store, version: v0.1.19}
       tk-multi-loader2:
         action_mappings:
-          Maya Scene: [open, assemblyReference, reference, import, texture_node, coreArchive,
+          Maya Scene: [open, open_work_file, assemblyReference, reference, import, texture_node, coreArchive,
             importENV, importDGSHD]
           Photoshop Image: [texture_node]
           Rendered Image: [texture_node]
@@ -98,7 +98,7 @@ engines:
         title_name: File Loader 2.0
       tk-multi-loader2-MDLLoader:
         action_mappings:
-          Maya Scene: [open, reference, import]
+          Maya Scene: [open, open_work_file, reference, import]
           Photoshop Image: [texture_node]
           Rendered Image: [texture_node]
         actions_hook: '{config}/tk-maya_actions.py'
@@ -135,7 +135,7 @@ engines:
         title_name: File Loader 2.0
       tk-multi-loader2-RIGLoader:
         action_mappings:
-          Maya Scene: [open, reference, import]
+          Maya Scene: [open, open_work_file, reference, import]
           Photoshop Image: [texture_node]
           Rendered Image: [texture_node]
         actions_hook: '{config}/tk-maya_actions.py'
@@ -165,7 +165,7 @@ engines:
 
       tk-multi-loader2-SRFLoader:
         action_mappings:
-          Maya Scene: [open, reference, import, assetXML, loadSurfVar]
+          Maya Scene: [open, open_work_file, reference, import, assetXML, loadSurfVar]
           Photoshop Image: [texture_node]
           Rendered Image: [texture_node]
         actions_hook: '{config}/tk-maya_actions.py'
@@ -230,7 +230,7 @@ engines:
         title_name: File Loader 2.0
       tk-multi-loader2-assetLoader:
         action_mappings:
-          Maya Scene: [open, assemblyReference, reference, import]
+          Maya Scene: [open, open_work_file, assemblyReference, reference, import]
           Photoshop Image: [texture_node]
           Rendered Image: [texture_node]
         actions_hook: '{config}/tk-maya_actions.py'

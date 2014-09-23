@@ -6,7 +6,7 @@ engines:
         location: {name: tk-multi-about, type: app_store, version: v0.1.19}
       tk-multi-loader2:
         action_mappings:
-          Maya Scene: [open, assemblyReference, reference, import, texture_node, coreArchive,
+          Maya Scene: [open, open_work_file, assemblyReference, reference, import, texture_node, coreArchive,
             importENV, importDGSHD]
           Photoshop Image: [texture_node]
           Rendered Image: [texture_node]
